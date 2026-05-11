@@ -1,0 +1,116 @@
+# Cula Verification Pipeline — Cursor Rules
+
+# ---------------------------------------------------------------------------
+# Project architecture
+# ---------------------------------------------------------------------------
+
+# This project is a library-first Python package (`cula/`) with an optional
+# FastAPI layer on top.  The verification pipeline lives under
+# `cula/verification/` and follows a strict four-step flow:
+#
+#   fetch  →  normalize  →  rule engine  →  scoring
+#
+# Each step is a pure module with clear inputs and outputs.
+# Keep steps as isolated, testable functions — no cross-step side effects.
+
+folder_structure = """
+cula/                        # core library (httpx + Pydantic v2)
+  client.py                  # CulaClient — sync HTTP client
+  models.py                  # Pydantic v2 models (auto-generated from OpenAPI)
+  sink_graph.py              # NetworkX graph builder
+  verification/
+    fetch.py                 # step 1 — pure I/O, returns FetchResult
+    normalize.py             # step 2 — reshape raw data for rules
+    rules.py                 # step 3 — deterministic consistency checks
+    scoring.py               # step 4 — aggregate rule results into a report
+app/                         # FastAPI layer (wraps the library)
+  main.py
+  routers/
+  schemas/
+  dependencies/
+  services/
+tests/                       # pytest (offline, mocked)
+example/                     # runnable CLI demos
+openapi/                     # vendored OpenAPI spec
+"""
+
+# ---------------------------------------------------------------------------
+# Python & FastAPI best practices
+# ---------------------------------------------------------------------------
+
+python_best_practices = [
+    "Use type hints for all function parameters and return values",
+    "Follow PEP 8 style guide",
+    "Use Pydantic v2 models for request/response schemas and data validation",
+    "Use httpx (sync) as the HTTP client — not requests",
+    "Implement dependency injection for shared resources",
+    "Utilize async/await for non-blocking operations in the FastAPI layer",
+    "Use path operation decorators (@app.get, @app.post, etc.)",
+    "Implement proper error handling with HTTPException in the FastAPI layer",
+    "Use FastAPI's built-in OpenAPI and JSON Schema support",
+    "Use FastAPI's background tasks for long-running operations",
+    "Implement proper CORS handling",
+    "Use FastAPI's security utilities for authentication",
+]
+
+# ---------------------------------------------------------------------------
+# Library-layer error handling
+# ---------------------------------------------------------------------------
+
+# The fetch step (and other library code) COLLECTS errors in a list and
+# NEVER raises.  The FastAPI layer translates collected errors into HTTP
+# responses.  This keeps the library usable outside of FastAPI (CLI, tests,
+# notebooks).
+
+# ---------------------------------------------------------------------------
+# Cula API constraints
+# ---------------------------------------------------------------------------
+
+# - Base URL: https://api.hack-hpi.cula.earth
+# - Rate limit: 60 requests / minute / IP (HTTP 429 when exceeded).
+#   Any code that calls CulaClient must respect this — use sequential calls
+#   or a simple rate limiter / time.sleep between bursts.
+# - All endpoints are read-only and unauthenticated.
+
+# ---------------------------------------------------------------------------
+# Verification pipeline rules
+# ---------------------------------------------------------------------------
+
+# - v1 uses ONLY deterministic, explainable checks — no ML models.
+# - Each rule is a pure function: (NormalizedContext) -> CheckResult.
+# - CheckResult carries severity (info / warn / fail), a code, a message,
+#   and optional evidence (event ids, timestamps, series names).
+# - Scoring aggregates rule outputs into a heuristic confidence band or
+#   0–100 score with explicit "heuristic" labeling — never claim calibrated
+#   probability.
+# - score() lives in scoring.py.  It starts at 100, subtracts per-rule
+#   weighted penalties, clamps 0–100, maps to a band, attaches top_reasons.
+# - Rule weights by tier (RULE_WEIGHTS dict):
+#     Tier 1 (critical): MACHINE_COVERAGE=25, TEMP_PLAUSIBLE=22, PROOF_PRESENCE=20
+#     Tier 2 (important): TIMELINE_ORDER=15, MASS_BALANCE=15, SITE_CONTINUITY=12
+#     Tier 3 (supporting): DELIVERY_DISTANCE=8, FILE_REUSE=5
+# - fail subtracts the full weight; warn subtracts weight * 0.4.
+# - Confidence bands: 76–100 high, 51–75 medium, 0–50 low.
+# - VerificationReport is the final output: sink_id, counts, score, band,
+#   top_reasons (ordered by penalty weight), plus the full checks list.
+
+# ---------------------------------------------------------------------------
+# Testing
+# ---------------------------------------------------------------------------
+
+# - Use unittest.mock.MagicMock to stub CulaClient — tests must be offline
+#   and fast (no network calls).
+# - Run tests with `pytest -v -s` to see print diagnostics.
+# - Implement comprehensive unit tests; integration tests against the live
+#   API are optional and clearly separated.
+
+# ---------------------------------------------------------------------------
+# Live demo
+# ---------------------------------------------------------------------------
+
+# - `example/live_demo.py` is the single runnable script that exercises the
+#   full pipeline end-to-end against the live API.
+# - Whenever a new pipeline step is implemented (rules, scoring, enrichment,
+#   etc.), update live_demo.py to include and display its output.
+# - Keep it as the "one command to see everything" entry point.
+

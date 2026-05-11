@@ -1,0 +1,16 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+
+# Ignore output files
+sink.json
+sink_graph_gnn.html
+
+# Ignore data and checkpoints for GNN
+gnn/data/
+gnn/checkpoints/
