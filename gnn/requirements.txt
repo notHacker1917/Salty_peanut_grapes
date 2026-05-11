@@ -1,0 +1,5 @@
+# Install from repo root after the cula package deps:
+#   pip install -e .
+#   pip install -r gnn/requirements.txt
+torch>=2.2
+torch-geometric>=2.5

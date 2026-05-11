@@ -1,0 +1,8 @@
+[
+  {
+    "id": "4f01b3e0-9871-4d6f-bd65-4c607efc58a6",
+    "error": "HTTPStatusError",
+    "message": "Client error '404 Not Found' for url 'https://api.hack-hpi.cula.earth/api/hack-hpi/sinks/4f01b3e0-9871-4d6f-bd65-4c607efc58a6'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "traceback": "Traceback (most recent call last):\n  File \"/Users/mikahoppe/Documents/salty-peanut-grapes/gnn/fetch_sinks.py\", line 78, in main\n    sink = client.get_sink(sid)\n  File \"/Users/mikahoppe/Documents/salty-peanut-grapes/cula/client.py\", line 50, in get_sink\n    response.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/Users/mikahoppe/Documents/salty-peanut-grapes/.venv/lib/python3.13/site-packages/httpx/_models.py\", line 829, in raise_for_status\n    raise HTTPStatusError(message, request=request, response=self)\nhttpx.HTTPStatusError: Client error '404 Not Found' for url 'https://api.hack-hpi.cula.earth/api/hack-hpi/sinks/4f01b3e0-9871-4d6f-bd65-4c607efc58a6'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404\n"
+  }
+]

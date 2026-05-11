@@ -1,0 +1,1977 @@
+[
+  {
+    "id": "10375aa3-b4b0-4543-900c-d83f163babd9",
+    "path": "gnn/data/sinks/10375aa3-b4b0-4543-900c-d83f163babd9.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "1a77fb22-a931-41c8-b609-b9d2615f51cb",
+    "path": "gnn/data/sinks/1a77fb22-a931-41c8-b609-b9d2615f51cb.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "311b0b89-c632-481d-a359-ef1190458158",
+    "path": "gnn/data/sinks/311b0b89-c632-481d-a359-ef1190458158.json",
+    "label": "Sink \u2014 Rieden"
+  },
+  {
+    "id": "639e264e-f58d-4d4b-973b-ede5e9c635b7",
+    "path": "gnn/data/sinks/639e264e-f58d-4d4b-973b-ede5e9c635b7.json",
+    "label": "Sink \u2014 Rieden"
+  },
+  {
+    "id": "9d8cc915-5175-4951-bb28-8daabcc0ed82",
+    "path": "gnn/data/sinks/9d8cc915-5175-4951-bb28-8daabcc0ed82.json",
+    "label": "Sink \u2014 Rieden"
+  },
+  {
+    "id": "95da64b5-83b8-46d4-b093-4dd636658896",
+    "path": "gnn/data/sinks/95da64b5-83b8-46d4-b093-4dd636658896.json",
+    "label": "Sink \u2014 Gro\u00df-Gerau"
+  },
+  {
+    "id": "9f9c5c6a-61d3-4cb4-8c33-2087e3918f8c",
+    "path": "gnn/data/sinks/9f9c5c6a-61d3-4cb4-8c33-2087e3918f8c.json",
+    "label": "Sink \u2014 Ellwangen (Jagst)"
+  },
+  {
+    "id": "c0b7b6f9-4d3c-4ec2-a8d3-975cf159350e",
+    "path": "gnn/data/sinks/c0b7b6f9-4d3c-4ec2-a8d3-975cf159350e.json",
+    "label": "Sink \u2014 Gr\u00f6dinge"
+  },
+  {
+    "id": "cef8351c-6bba-4d25-9d93-05750cc93701",
+    "path": "gnn/data/sinks/cef8351c-6bba-4d25-9d93-05750cc93701.json",
+    "label": "Sink \u2014 Ellwangen (Jagst)"
+  },
+  {
+    "id": "80445d6e-8468-4f9b-98b2-d230669c6cb7",
+    "path": "gnn/data/sinks/80445d6e-8468-4f9b-98b2-d230669c6cb7.json",
+    "label": "Sink \u2014 Gr\u00f6dinge"
+  },
+  {
+    "id": "2ddc85c4-d3e2-47e5-89c7-5a0807f1a80a",
+    "path": "gnn/data/sinks/2ddc85c4-d3e2-47e5-89c7-5a0807f1a80a.json",
+    "label": "Sink \u2014 Happurg"
+  },
+  {
+    "id": "5c13033d-fb32-4515-b246-1c9ab6a615eb",
+    "path": "gnn/data/sinks/5c13033d-fb32-4515-b246-1c9ab6a615eb.json",
+    "label": "Sink \u2014 M\u00fcnchen"
+  },
+  {
+    "id": "576c2eca-852b-4d19-b824-7ba6fd34b3fe",
+    "path": "gnn/data/sinks/576c2eca-852b-4d19-b824-7ba6fd34b3fe.json",
+    "label": "Sink \u2014 Ellwangen (Jagst)"
+  },
+  {
+    "id": "a3f89d8d-8fe0-40ac-8208-da0912d25230",
+    "path": "gnn/data/sinks/a3f89d8d-8fe0-40ac-8208-da0912d25230.json",
+    "label": "Sink \u2014 Gro\u00df-Gerau"
+  },
+  {
+    "id": "ef6ec2fc-5c05-43ff-8a50-927efb7c9fd1",
+    "path": "gnn/data/sinks/ef6ec2fc-5c05-43ff-8a50-927efb7c9fd1.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "76fafe48-893b-4fed-8480-7838b89c30b3",
+    "path": "gnn/data/sinks/76fafe48-893b-4fed-8480-7838b89c30b3.json",
+    "label": "Sink \u2014 Gr\u00f6dinge"
+  },
+  {
+    "id": "d0cc8b19-fd5b-46af-865d-5fc68e469e93",
+    "path": "gnn/data/sinks/d0cc8b19-fd5b-46af-865d-5fc68e469e93.json",
+    "label": "Sink \u2014 H\u00e4rryda"
+  },
+  {
+    "id": "a765826c-5bdd-4950-990c-5dfc2f91126b",
+    "path": "gnn/data/sinks/a765826c-5bdd-4950-990c-5dfc2f91126b.json",
+    "label": "Sink \u2014 Gro\u00df-Gerau"
+  },
+  {
+    "id": "c9d53cc8-f43b-45e2-8c34-20a9e4d02535",
+    "path": "gnn/data/sinks/c9d53cc8-f43b-45e2-8c34-20a9e4d02535.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "0d91282a-fdd0-40d8-9d04-a0c3892d68b5",
+    "path": "gnn/data/sinks/0d91282a-fdd0-40d8-9d04-a0c3892d68b5.json",
+    "label": "Sink \u2014 Gr\u00f6dinge"
+  },
+  {
+    "id": "2166e832-a05e-4c7b-95dd-9ab962cb27e0",
+    "path": "gnn/data/sinks/2166e832-a05e-4c7b-95dd-9ab962cb27e0.json",
+    "label": "Sink \u2014 Gr\u00f6dinge"
+  },
+  {
+    "id": "c8d1aecd-bdc9-494a-921b-96af747b17e1",
+    "path": "gnn/data/sinks/c8d1aecd-bdc9-494a-921b-96af747b17e1.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "0800600b-7b6d-46e1-810f-508caf6deff7",
+    "path": "gnn/data/sinks/0800600b-7b6d-46e1-810f-508caf6deff7.json",
+    "label": "Sink \u2014 Gr\u00f6dinge"
+  },
+  {
+    "id": "145f0776-5c7a-415d-a523-f2a6fb33c011",
+    "path": "gnn/data/sinks/145f0776-5c7a-415d-a523-f2a6fb33c011.json",
+    "label": "Sink \u2014 Hereford"
+  },
+  {
+    "id": "22ae5369-c36a-4e74-9d93-6cc415c2bfb0",
+    "path": "gnn/data/sinks/22ae5369-c36a-4e74-9d93-6cc415c2bfb0.json",
+    "label": "Sink \u2014 Beckeln"
+  },
+  {
+    "id": "0e878381-522f-4330-bc64-dc11387e00b7",
+    "path": "gnn/data/sinks/0e878381-522f-4330-bc64-dc11387e00b7.json",
+    "label": "Sink \u2014 Gr\u00f6dinge"
+  },
+  {
+    "id": "c59fad5f-4b86-40b1-8b08-9e45b25606fb",
+    "path": "gnn/data/sinks/c59fad5f-4b86-40b1-8b08-9e45b25606fb.json",
+    "label": "Sink \u2014 M\u00fcnchen"
+  },
+  {
+    "id": "07d0b1f2-b202-4c9a-b9a2-3562660fa6e3",
+    "path": "gnn/data/sinks/07d0b1f2-b202-4c9a-b9a2-3562660fa6e3.json",
+    "label": "Sink \u2014 Hereford"
+  },
+  {
+    "id": "2a742ddf-ab31-435d-b3c9-84655726dfb8",
+    "path": "gnn/data/sinks/2a742ddf-ab31-435d-b3c9-84655726dfb8.json",
+    "label": "Sink \u2014 M\u00fcnchen"
+  },
+  {
+    "id": "14e1ca65-c8dd-4b59-bd65-f19acdb3d5cd",
+    "path": "gnn/data/sinks/14e1ca65-c8dd-4b59-bd65-f19acdb3d5cd.json",
+    "label": "Sink \u2014 Wettenberg"
+  },
+  {
+    "id": "791d2140-cf5a-4d58-bc02-0cc99e7762f0",
+    "path": "gnn/data/sinks/791d2140-cf5a-4d58-bc02-0cc99e7762f0.json",
+    "label": "Sink \u2014 Pichl bei Wels"
+  },
+  {
+    "id": "c9541e59-2bb0-4711-90f6-44c8f5bfc01f",
+    "path": "gnn/data/sinks/c9541e59-2bb0-4711-90f6-44c8f5bfc01f.json",
+    "label": "Sink \u2014 Gro\u00df-Gerau"
+  },
+  {
+    "id": "28192333-937e-4c4a-87da-8e15b7ecbce9",
+    "path": "gnn/data/sinks/28192333-937e-4c4a-87da-8e15b7ecbce9.json",
+    "label": "Sink \u2014 Gimbsheim"
+  },
+  {
+    "id": "852941af-58dd-45a1-a9be-fe9bd3e8f862",
+    "path": "gnn/data/sinks/852941af-58dd-45a1-a9be-fe9bd3e8f862.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "49965524-0afa-46f4-b76b-53e92a4c5f5c",
+    "path": "gnn/data/sinks/49965524-0afa-46f4-b76b-53e92a4c5f5c.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "895ca1ef-cf3f-4fc7-809f-151179dc7422",
+    "path": "gnn/data/sinks/895ca1ef-cf3f-4fc7-809f-151179dc7422.json",
+    "label": "Sink \u2014 Crailsheim"
+  },
+  {
+    "id": "b6264b56-7500-4f90-8490-88015e9ef48f",
+    "path": "gnn/data/sinks/b6264b56-7500-4f90-8490-88015e9ef48f.json",
+    "label": "Sink \u2014 Gro\u00df-Gerau"
+  },
+  {
+    "id": "54f12af9-9429-4f99-81d5-20c142a81d8b",
+    "path": "gnn/data/sinks/54f12af9-9429-4f99-81d5-20c142a81d8b.json",
+    "label": "Sink \u2014 Gro\u00df-Gerau"
+  },
+  {
+    "id": "81d814f8-856f-44cd-8632-ca13b1177103",
+    "path": "gnn/data/sinks/81d814f8-856f-44cd-8632-ca13b1177103.json",
+    "label": "Sink \u2014 Gro\u00df-Gerau"
+  },
+  {
+    "id": "ce5860fb-42b9-418a-9962-892e0cc8ea69",
+    "path": "gnn/data/sinks/ce5860fb-42b9-418a-9962-892e0cc8ea69.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "ec7f437a-5c64-4110-bef7-0a9e996ba295",
+    "path": "gnn/data/sinks/ec7f437a-5c64-4110-bef7-0a9e996ba295.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "a0f5e461-82d0-45f3-b11e-67b2dc468e3e",
+    "path": "gnn/data/sinks/a0f5e461-82d0-45f3-b11e-67b2dc468e3e.json",
+    "label": "Sink \u2014 Gro\u00df-Gerau"
+  },
+  {
+    "id": "2728229f-8b1e-4a73-bffb-73b8145f2da7",
+    "path": "gnn/data/sinks/2728229f-8b1e-4a73-bffb-73b8145f2da7.json",
+    "label": "Sink \u2014 Gro\u00df-Gerau"
+  },
+  {
+    "id": "405a6861-891c-4065-9959-9675c00e0914",
+    "path": "gnn/data/sinks/405a6861-891c-4065-9959-9675c00e0914.json",
+    "label": "Sink \u2014 Gro\u00df-Gerau"
+  },
+  {
+    "id": "e0162275-d68b-4309-a4dc-49ee8ed69eff",
+    "path": "gnn/data/sinks/e0162275-d68b-4309-a4dc-49ee8ed69eff.json",
+    "label": "Sink \u2014 M\u00fcnchen"
+  },
+  {
+    "id": "d8ec890c-e9fb-439d-9179-ef322be8e38f",
+    "path": "gnn/data/sinks/d8ec890c-e9fb-439d-9179-ef322be8e38f.json",
+    "label": "Sink \u2014 Immenstadt im Allg\u00e4u"
+  },
+  {
+    "id": "736ad62b-d957-4407-b8d5-ac5d4a902c70",
+    "path": "gnn/data/sinks/736ad62b-d957-4407-b8d5-ac5d4a902c70.json",
+    "label": "Sink \u2014 Gimbsheim"
+  },
+  {
+    "id": "ba6f93d4-1094-4e84-8c4c-062cb2ca2a72",
+    "path": "gnn/data/sinks/ba6f93d4-1094-4e84-8c4c-062cb2ca2a72.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "dda00d98-f34b-4b35-8ed4-0df1f006260c",
+    "path": "gnn/data/sinks/dda00d98-f34b-4b35-8ed4-0df1f006260c.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "740b0d47-b524-4d76-8d7d-29fe841a989f",
+    "path": "gnn/data/sinks/740b0d47-b524-4d76-8d7d-29fe841a989f.json",
+    "label": "Sink \u2014 Gro\u00df-Gerau"
+  },
+  {
+    "id": "f6d21301-e9ac-40e0-b5ce-1398908d6b47",
+    "path": "gnn/data/sinks/f6d21301-e9ac-40e0-b5ce-1398908d6b47.json",
+    "label": "Sink \u2014 Gro\u00df-Gerau"
+  },
+  {
+    "id": "d58f5414-07da-4711-8ad0-eb8df4b50993",
+    "path": "gnn/data/sinks/d58f5414-07da-4711-8ad0-eb8df4b50993.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "4b09c2d9-6c9b-4821-aeea-4391b7421e4b",
+    "path": "gnn/data/sinks/4b09c2d9-6c9b-4821-aeea-4391b7421e4b.json",
+    "label": "Sink \u2014 M\u00fcnchen"
+  },
+  {
+    "id": "c260985c-230b-4754-9889-065e7afd4286",
+    "path": "gnn/data/sinks/c260985c-230b-4754-9889-065e7afd4286.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "da1d4d08-a142-4481-8611-8322c70193d8",
+    "path": "gnn/data/sinks/da1d4d08-a142-4481-8611-8322c70193d8.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "90e0b43e-48f5-49e7-96fc-2159554ff4a7",
+    "path": "gnn/data/sinks/90e0b43e-48f5-49e7-96fc-2159554ff4a7.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "ba8a2957-2169-4401-953d-40e09eceec3c",
+    "path": "gnn/data/sinks/ba8a2957-2169-4401-953d-40e09eceec3c.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "be100ca5-b06c-41db-9487-9b3b7bbb1d33",
+    "path": "gnn/data/sinks/be100ca5-b06c-41db-9487-9b3b7bbb1d33.json",
+    "label": "Sink \u2014 Sankt Alban"
+  },
+  {
+    "id": "edcf2ff9-4f95-4d29-a5b5-dcc517eeaf58",
+    "path": "gnn/data/sinks/edcf2ff9-4f95-4d29-a5b5-dcc517eeaf58.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "d01e2a8a-025e-4a30-a52f-2e7adb1859b0",
+    "path": "gnn/data/sinks/d01e2a8a-025e-4a30-a52f-2e7adb1859b0.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "c5a1b552-fee9-4992-8ead-6f4f7f50f352",
+    "path": "gnn/data/sinks/c5a1b552-fee9-4992-8ead-6f4f7f50f352.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "4b481bcc-3858-4fef-893a-eaec8c1a4f0b",
+    "path": "gnn/data/sinks/4b481bcc-3858-4fef-893a-eaec8c1a4f0b.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "1039327c-bb06-438f-b374-b66b72fff500",
+    "path": "gnn/data/sinks/1039327c-bb06-438f-b374-b66b72fff500.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "5503efee-e7bd-46c7-a15a-64ef33c6df79",
+    "path": "gnn/data/sinks/5503efee-e7bd-46c7-a15a-64ef33c6df79.json",
+    "label": "Sink \u2014 Gro\u00df-Gerau"
+  },
+  {
+    "id": "02a4939b-a8f1-47f8-8d8a-f72812065009",
+    "path": "gnn/data/sinks/02a4939b-a8f1-47f8-8d8a-f72812065009.json",
+    "label": "Sink \u2014 Gro\u00df-Gerau"
+  },
+  {
+    "id": "bcb94966-1d31-420d-9f6d-0883a22ab464",
+    "path": "gnn/data/sinks/bcb94966-1d31-420d-9f6d-0883a22ab464.json",
+    "label": "Sink \u2014 Pichl bei Wels"
+  },
+  {
+    "id": "99597f21-ed6d-4387-bd57-df7bf577ce77",
+    "path": "gnn/data/sinks/99597f21-ed6d-4387-bd57-df7bf577ce77.json",
+    "label": "Sink \u2014 Pichl bei Wels"
+  },
+  {
+    "id": "973b5028-d88c-46fa-a70e-5569b1357c26",
+    "path": "gnn/data/sinks/973b5028-d88c-46fa-a70e-5569b1357c26.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "fa41afb7-e780-425c-8215-9c0d2182f5a0",
+    "path": "gnn/data/sinks/fa41afb7-e780-425c-8215-9c0d2182f5a0.json",
+    "label": "Sink \u2014 Gimbsheim"
+  },
+  {
+    "id": "c21f0dfd-b0e5-43cb-8097-3eb0e1224ad1",
+    "path": "gnn/data/sinks/c21f0dfd-b0e5-43cb-8097-3eb0e1224ad1.json",
+    "label": "Sink \u2014 Gimbsheim"
+  },
+  {
+    "id": "36b62d72-3b1f-4df4-954d-aec1e81fe50a",
+    "path": "gnn/data/sinks/36b62d72-3b1f-4df4-954d-aec1e81fe50a.json",
+    "label": "Sink \u2014 Gernsheim"
+  },
+  {
+    "id": "fcc36779-a946-43fd-9773-c581c946d772",
+    "path": "gnn/data/sinks/fcc36779-a946-43fd-9773-c581c946d772.json",
+    "label": "Sink \u2014 Gimbsheim"
+  },
+  {
+    "id": "bd88d78f-1e7a-4e5c-9cfa-0ed1c227366d",
+    "path": "gnn/data/sinks/bd88d78f-1e7a-4e5c-9cfa-0ed1c227366d.json",
+    "label": "Sink \u2014 Gernsheim"
+  },
+  {
+    "id": "cf37b85c-07ae-4a86-9d73-640269ad2b4b",
+    "path": "gnn/data/sinks/cf37b85c-07ae-4a86-9d73-640269ad2b4b.json",
+    "label": "Sink \u2014 Berngau"
+  },
+  {
+    "id": "fb5c821a-fd29-4702-bba5-2558c77bdbdf",
+    "path": "gnn/data/sinks/fb5c821a-fd29-4702-bba5-2558c77bdbdf.json",
+    "label": "Sink \u2014 Berngau"
+  },
+  {
+    "id": "8b6c972b-8ebf-4596-9c41-272630c6e322",
+    "path": "gnn/data/sinks/8b6c972b-8ebf-4596-9c41-272630c6e322.json",
+    "label": "Sink \u2014 Norrt\u00e4lje"
+  },
+  {
+    "id": "ce23bcf8-ec43-469e-bc4a-43d09efa2eb4",
+    "path": "gnn/data/sinks/ce23bcf8-ec43-469e-bc4a-43d09efa2eb4.json",
+    "label": "Sink \u2014 Asarum"
+  },
+  {
+    "id": "1ddb88af-53fa-4c8c-8b24-7de844c18bc4",
+    "path": "gnn/data/sinks/1ddb88af-53fa-4c8c-8b24-7de844c18bc4.json",
+    "label": "Sink \u2014 Asarum"
+  },
+  {
+    "id": "1804156f-4e2f-4a36-b540-08ff1303a45b",
+    "path": "gnn/data/sinks/1804156f-4e2f-4a36-b540-08ff1303a45b.json",
+    "label": "Sink \u2014 Norrt\u00e4lje"
+  },
+  {
+    "id": "f120dd61-2a4e-4db0-b0e0-33ba317dbd16",
+    "path": "gnn/data/sinks/f120dd61-2a4e-4db0-b0e0-33ba317dbd16.json",
+    "label": "Sink \u2014 H\u00e4rryda"
+  },
+  {
+    "id": "c78af072-89d9-4095-89be-5d0b00bef2f2",
+    "path": "gnn/data/sinks/c78af072-89d9-4095-89be-5d0b00bef2f2.json",
+    "label": "Sink \u2014 Norrt\u00e4lje"
+  },
+  {
+    "id": "0abded98-e5e0-417f-a6f2-5c7f93d16ce1",
+    "path": "gnn/data/sinks/0abded98-e5e0-417f-a6f2-5c7f93d16ce1.json",
+    "label": "Sink \u2014 Gr\u00f6dinge"
+  },
+  {
+    "id": "7afa893e-a19b-4162-8093-f5b0ef10deb0",
+    "path": "gnn/data/sinks/7afa893e-a19b-4162-8093-f5b0ef10deb0.json",
+    "label": "Sink \u2014 Gr\u00f6dinge"
+  },
+  {
+    "id": "89b50cbd-0051-4831-9d2b-ceee8fc5062e",
+    "path": "gnn/data/sinks/89b50cbd-0051-4831-9d2b-ceee8fc5062e.json",
+    "label": "Sink \u2014 H\u00e4rryda"
+  },
+  {
+    "id": "4cf74532-145f-441d-b22a-a0271d5763f7",
+    "path": "gnn/data/sinks/4cf74532-145f-441d-b22a-a0271d5763f7.json",
+    "label": "Sink \u2014 Gr\u00f6dinge"
+  },
+  {
+    "id": "b0734764-4c3b-44f5-9127-174499485c4d",
+    "path": "gnn/data/sinks/b0734764-4c3b-44f5-9127-174499485c4d.json",
+    "label": "Sink \u2014 Norrt\u00e4lje"
+  },
+  {
+    "id": "5d8ca428-913e-4109-97c9-dcb2c10a133c",
+    "path": "gnn/data/sinks/5d8ca428-913e-4109-97c9-dcb2c10a133c.json",
+    "label": "Sink \u2014 Gr\u00f6dinge"
+  },
+  {
+    "id": "302c8846-b210-4d92-bdd2-a2a1944d43c7",
+    "path": "gnn/data/sinks/302c8846-b210-4d92-bdd2-a2a1944d43c7.json",
+    "label": "Sink \u2014 \u00d6rebro"
+  },
+  {
+    "id": "1c09f7fb-53cf-4063-a356-728dc7d3c08b",
+    "path": "gnn/data/sinks/1c09f7fb-53cf-4063-a356-728dc7d3c08b.json",
+    "label": "Sink \u2014 \u00d6rebro"
+  },
+  {
+    "id": "ee305370-e1b9-4dbb-892c-579774701c29",
+    "path": "gnn/data/sinks/ee305370-e1b9-4dbb-892c-579774701c29.json",
+    "label": "Sink \u2014 \u00d6rebro"
+  },
+  {
+    "id": "215ecf75-e59e-46e2-85c8-99e268083488",
+    "path": "gnn/data/sinks/215ecf75-e59e-46e2-85c8-99e268083488.json",
+    "label": "Sink \u2014 Stuttgart"
+  },
+  {
+    "id": "259301ae-0076-48ca-8656-4c17266379fc",
+    "path": "gnn/data/sinks/259301ae-0076-48ca-8656-4c17266379fc.json",
+    "label": "Sink \u2014 Nijmegen"
+  },
+  {
+    "id": "d10fc64a-3877-464f-aa2b-6bb7285ff0c5",
+    "path": "gnn/data/sinks/d10fc64a-3877-464f-aa2b-6bb7285ff0c5.json",
+    "label": "Sink \u2014 \u00d6rebro"
+  },
+  {
+    "id": "ea12a2d3-edf8-4f1f-8623-f5af85cd0fc0",
+    "path": "gnn/data/sinks/ea12a2d3-edf8-4f1f-8623-f5af85cd0fc0.json",
+    "label": "Sink \u2014 \u00d6rebro"
+  },
+  {
+    "id": "7c0bb871-7ccb-45bc-87e0-9074431e876f",
+    "path": "gnn/data/sinks/7c0bb871-7ccb-45bc-87e0-9074431e876f.json",
+    "label": "Sink \u2014 \u00d6rebro"
+  },
+  {
+    "id": "d97321d5-e37b-49d6-957d-ceefc7f852b0",
+    "path": "gnn/data/sinks/d97321d5-e37b-49d6-957d-ceefc7f852b0.json",
+    "label": "Sink \u2014 \u00d6rebro"
+  },
+  {
+    "id": "2dd802ca-c11f-46be-991a-5bad47b157e5",
+    "path": "gnn/data/sinks/2dd802ca-c11f-46be-991a-5bad47b157e5.json",
+    "label": "Sink \u2014 \u00d6rebro"
+  },
+  {
+    "id": "b6baa292-5299-4bdf-83f3-b577668768a9",
+    "path": "gnn/data/sinks/b6baa292-5299-4bdf-83f3-b577668768a9.json",
+    "label": "Sink \u2014 \u00d6rebro"
+  },
+  {
+    "id": "716b1102-482f-4365-a02f-5988a6d8b41d",
+    "path": "gnn/data/sinks/716b1102-482f-4365-a02f-5988a6d8b41d.json",
+    "label": "Sink \u2014 Hereford"
+  },
+  {
+    "id": "17850cf7-7886-49a4-84a6-3b201606f7f1",
+    "path": "gnn/data/sinks/17850cf7-7886-49a4-84a6-3b201606f7f1.json",
+    "label": "Sink \u2014 Gr\u00f6dinge"
+  },
+  {
+    "id": "e7d6577f-e527-4e70-bd0d-5d026732c6fa",
+    "path": "gnn/data/sinks/e7d6577f-e527-4e70-bd0d-5d026732c6fa.json",
+    "label": "Sink \u2014 Gernsheim"
+  },
+  {
+    "id": "b00c1762-2ca8-4a8a-80fd-247c495702f1",
+    "path": "gnn/data/sinks/b00c1762-2ca8-4a8a-80fd-247c495702f1.json",
+    "label": "Sink \u2014 Gr\u00f6dinge"
+  },
+  {
+    "id": "81f109ce-2c45-4ca2-8c5e-c485d4bacb71",
+    "path": "gnn/data/sinks/81f109ce-2c45-4ca2-8c5e-c485d4bacb71.json",
+    "label": "Sink \u2014 Gro\u00df-Gerau"
+  },
+  {
+    "id": "7f53da17-7324-4599-97fa-6e569daa9a1b",
+    "path": "gnn/data/sinks/7f53da17-7324-4599-97fa-6e569daa9a1b.json",
+    "label": "Sink \u2014 Gr\u00f6dinge"
+  },
+  {
+    "id": "b5aac066-f1d0-46eb-bf5c-c126cf5dcb8c",
+    "path": "gnn/data/sinks/b5aac066-f1d0-46eb-bf5c-c126cf5dcb8c.json",
+    "label": "Sink \u2014 Gro\u00df-Gerau"
+  },
+  {
+    "id": "d06431aa-524e-49b3-a31d-1a21e271c9a2",
+    "path": "gnn/data/sinks/d06431aa-524e-49b3-a31d-1a21e271c9a2.json",
+    "label": "Sink \u2014 Sankt Alban"
+  },
+  {
+    "id": "30183e45-b73b-494a-8d02-9d780de29047",
+    "path": "gnn/data/sinks/30183e45-b73b-494a-8d02-9d780de29047.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "ebd053bf-9f32-4cf5-8e44-829b3b2c7773",
+    "path": "gnn/data/sinks/ebd053bf-9f32-4cf5-8e44-829b3b2c7773.json",
+    "label": "Sink \u2014 Gro\u00df-Gerau"
+  },
+  {
+    "id": "a04668c9-b299-4351-afb2-4dd7061e9377",
+    "path": "gnn/data/sinks/a04668c9-b299-4351-afb2-4dd7061e9377.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "14357562-b496-42e7-a1c0-6954003ef0fb",
+    "path": "gnn/data/sinks/14357562-b496-42e7-a1c0-6954003ef0fb.json",
+    "label": "Sink \u2014 Gimbsheim"
+  },
+  {
+    "id": "82f3f5b0-25d3-4580-a3b3-83d74f82a3aa",
+    "path": "gnn/data/sinks/82f3f5b0-25d3-4580-a3b3-83d74f82a3aa.json",
+    "label": "Sink \u2014 Gernsheim"
+  },
+  {
+    "id": "1f763ce3-bc94-4739-a0bc-7e7b79a53cb8",
+    "path": "gnn/data/sinks/1f763ce3-bc94-4739-a0bc-7e7b79a53cb8.json",
+    "label": "Sink \u2014 Kleinostheim"
+  },
+  {
+    "id": "b1032397-ca47-45f7-932e-de3ff6625cd9",
+    "path": "gnn/data/sinks/b1032397-ca47-45f7-932e-de3ff6625cd9.json",
+    "label": "Sink \u2014 H\u00e4rryda"
+  },
+  {
+    "id": "978e5803-35d9-41fb-b5e5-731a60a6069a",
+    "path": "gnn/data/sinks/978e5803-35d9-41fb-b5e5-731a60a6069a.json",
+    "label": "Sink \u2014 Eislingen/Fils"
+  },
+  {
+    "id": "23f4eb32-ba61-44be-b695-eb1a263fe73b",
+    "path": "gnn/data/sinks/23f4eb32-ba61-44be-b695-eb1a263fe73b.json",
+    "label": "Sink \u2014 Ellwangen (Jagst)"
+  },
+  {
+    "id": "2f44be93-e553-4648-88e1-58e8bc5ecee5",
+    "path": "gnn/data/sinks/2f44be93-e553-4648-88e1-58e8bc5ecee5.json",
+    "label": "Sink \u2014 Mannheim"
+  },
+  {
+    "id": "1316ea63-848b-4913-a5ca-273fe4daf704",
+    "path": "gnn/data/sinks/1316ea63-848b-4913-a5ca-273fe4daf704.json",
+    "label": "Sink \u2014 Gr\u00f6dinge"
+  },
+  {
+    "id": "66730966-6993-4765-a0f0-8e9df38e7b83",
+    "path": "gnn/data/sinks/66730966-6993-4765-a0f0-8e9df38e7b83.json",
+    "label": "Sink \u2014 Gro\u00df-Gerau"
+  },
+  {
+    "id": "ba75bd5d-a94c-4aee-9c6f-fc462615815e",
+    "path": "gnn/data/sinks/ba75bd5d-a94c-4aee-9c6f-fc462615815e.json",
+    "label": "Sink \u2014 Eislingen/Fils"
+  },
+  {
+    "id": "423a40ac-c88f-48a7-bd93-5e01a2346114",
+    "path": "gnn/data/sinks/423a40ac-c88f-48a7-bd93-5e01a2346114.json",
+    "label": "Sink \u2014 Sneek"
+  },
+  {
+    "id": "33ad9f45-b7e4-431f-a0ea-5a4b0e4009d7",
+    "path": "gnn/data/sinks/33ad9f45-b7e4-431f-a0ea-5a4b0e4009d7.json",
+    "label": "Sink \u2014 Gimbsheim"
+  },
+  {
+    "id": "f4560c9f-3cfb-4c96-8429-af421e7039b8",
+    "path": "gnn/data/sinks/f4560c9f-3cfb-4c96-8429-af421e7039b8.json",
+    "label": "Sink \u2014 Sneek"
+  },
+  {
+    "id": "651c6e07-0ce0-4d01-b96c-a02e5c8ef713",
+    "path": "gnn/data/sinks/651c6e07-0ce0-4d01-b96c-a02e5c8ef713.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "7887febb-6aef-40f8-8072-eda05645f340",
+    "path": "gnn/data/sinks/7887febb-6aef-40f8-8072-eda05645f340.json",
+    "label": "Sink \u2014 Grubbenvorst"
+  },
+  {
+    "id": "69302eeb-2ee6-4b53-bfa4-93580a2b9c7e",
+    "path": "gnn/data/sinks/69302eeb-2ee6-4b53-bfa4-93580a2b9c7e.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "62d30bbf-64e6-44da-9683-24900644bbb3",
+    "path": "gnn/data/sinks/62d30bbf-64e6-44da-9683-24900644bbb3.json",
+    "label": "Sink \u2014 Nijmegen"
+  },
+  {
+    "id": "97d47559-3a24-4990-9211-57590c12e655",
+    "path": "gnn/data/sinks/97d47559-3a24-4990-9211-57590c12e655.json",
+    "label": "Sink \u2014 Neunkirchen am Sand"
+  },
+  {
+    "id": "6740095d-ce6c-49ee-b66c-9fbd65cd2c64",
+    "path": "gnn/data/sinks/6740095d-ce6c-49ee-b66c-9fbd65cd2c64.json",
+    "label": "Sink \u2014 Nijmegen"
+  },
+  {
+    "id": "71870858-b34f-4904-a4bf-e151f3d032e9",
+    "path": "gnn/data/sinks/71870858-b34f-4904-a4bf-e151f3d032e9.json",
+    "label": "Sink \u2014 Kirchheim im Innkreis"
+  },
+  {
+    "id": "3625348f-1f3e-43fd-b87d-e9a03a1b695e",
+    "path": "gnn/data/sinks/3625348f-1f3e-43fd-b87d-e9a03a1b695e.json",
+    "label": "Sink \u2014 Offenhausen"
+  },
+  {
+    "id": "477fb14a-5c42-4ad1-aac3-6c0b4287b038",
+    "path": "gnn/data/sinks/477fb14a-5c42-4ad1-aac3-6c0b4287b038.json",
+    "label": "Sink \u2014 Berlin"
+  },
+  {
+    "id": "dd992633-b845-4b6a-a675-acdc140789c0",
+    "path": "gnn/data/sinks/dd992633-b845-4b6a-a675-acdc140789c0.json",
+    "label": "Sink \u2014 Gimbsheim"
+  },
+  {
+    "id": "cdc83bfa-b7b0-4346-8fb5-3129f87ef055",
+    "path": "gnn/data/sinks/cdc83bfa-b7b0-4346-8fb5-3129f87ef055.json",
+    "label": "Sink \u2014 Gro\u00df-Gerau"
+  },
+  {
+    "id": "9fc599ba-84d3-4e9a-bfb6-b23e2f755b7c",
+    "path": "gnn/data/sinks/9fc599ba-84d3-4e9a-bfb6-b23e2f755b7c.json",
+    "label": "Sink \u2014 R\u00fcdesheim am Rhein"
+  },
+  {
+    "id": "cc368933-c96a-41f1-a7dd-23012bba383e",
+    "path": "gnn/data/sinks/cc368933-c96a-41f1-a7dd-23012bba383e.json",
+    "label": "Sink \u2014 Beckeln"
+  },
+  {
+    "id": "3cec8e86-450b-49c5-8394-00e0e05cbea7",
+    "path": "gnn/data/sinks/3cec8e86-450b-49c5-8394-00e0e05cbea7.json",
+    "label": "Sink \u2014 Oberarnbach"
+  },
+  {
+    "id": "89f6cc6d-3c7e-4d4d-a358-ffd1fac8ae42",
+    "path": "gnn/data/sinks/89f6cc6d-3c7e-4d4d-a358-ffd1fac8ae42.json",
+    "label": "Sink \u2014 Mainz"
+  },
+  {
+    "id": "ee4b4ba0-8487-4555-8355-0a0e700501e5",
+    "path": "gnn/data/sinks/ee4b4ba0-8487-4555-8355-0a0e700501e5.json",
+    "label": "Sink \u2014 Stemmen"
+  },
+  {
+    "id": "f2ee20e2-263f-4c94-a273-83428737287c",
+    "path": "gnn/data/sinks/f2ee20e2-263f-4c94-a273-83428737287c.json",
+    "label": "Sink \u2014 Crailsheim"
+  },
+  {
+    "id": "05f19d25-9522-4d47-a69a-90c3bd6a8527",
+    "path": "gnn/data/sinks/05f19d25-9522-4d47-a69a-90c3bd6a8527.json",
+    "label": "Sink \u2014 Erlangen"
+  },
+  {
+    "id": "88108b26-4726-4c70-8558-9138b557c66a",
+    "path": "gnn/data/sinks/88108b26-4726-4c70-8558-9138b557c66a.json",
+    "label": "Sink \u2014 Eislingen/Fils"
+  },
+  {
+    "id": "adb6ee43-c223-42ee-8267-c9e8a5c09a0f",
+    "path": "gnn/data/sinks/adb6ee43-c223-42ee-8267-c9e8a5c09a0f.json",
+    "label": "Sink \u2014 Eislingen/Fils"
+  },
+  {
+    "id": "d872997a-1bb8-4a81-b270-3b8a94fb8828",
+    "path": "gnn/data/sinks/d872997a-1bb8-4a81-b270-3b8a94fb8828.json",
+    "label": "Sink \u2014 Berngau"
+  },
+  {
+    "id": "90a80507-5897-41c5-b470-2dca92167ca7",
+    "path": "gnn/data/sinks/90a80507-5897-41c5-b470-2dca92167ca7.json",
+    "label": "Sink \u2014 Thurnau"
+  },
+  {
+    "id": "cb3627ad-c450-423a-9949-3518e690bc23",
+    "path": "gnn/data/sinks/cb3627ad-c450-423a-9949-3518e690bc23.json",
+    "label": "Sink \u2014 Thurnau"
+  },
+  {
+    "id": "d0de03d2-d952-481b-b544-292b52e8b21a",
+    "path": "gnn/data/sinks/d0de03d2-d952-481b-b544-292b52e8b21a.json",
+    "label": "Sink \u2014 Thurnau"
+  },
+  {
+    "id": "847ad996-c218-43fb-8118-609ebdfff742",
+    "path": "gnn/data/sinks/847ad996-c218-43fb-8118-609ebdfff742.json",
+    "label": "Sink \u2014 Thurnau"
+  },
+  {
+    "id": "2f3cce10-50b8-442d-840c-11a4b3e127ea",
+    "path": "gnn/data/sinks/2f3cce10-50b8-442d-840c-11a4b3e127ea.json",
+    "label": "Sink \u2014 Sankt Alban"
+  },
+  {
+    "id": "43e7e856-80f9-4a3d-86cf-3060aebd7f43",
+    "path": "gnn/data/sinks/43e7e856-80f9-4a3d-86cf-3060aebd7f43.json",
+    "label": "Sink \u2014 Happurg"
+  },
+  {
+    "id": "eef25a51-f7b4-4ed4-b8c8-842d66d1b747",
+    "path": "gnn/data/sinks/eef25a51-f7b4-4ed4-b8c8-842d66d1b747.json",
+    "label": "Sink \u2014 Happurg"
+  },
+  {
+    "id": "862966ed-3b1d-4486-aec3-351bbcb178aa",
+    "path": "gnn/data/sinks/862966ed-3b1d-4486-aec3-351bbcb178aa.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "6695c179-7823-4207-9a60-fbd058c7264f",
+    "path": "gnn/data/sinks/6695c179-7823-4207-9a60-fbd058c7264f.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "d4eecaec-f527-4b4f-939c-2ba22dd71b36",
+    "path": "gnn/data/sinks/d4eecaec-f527-4b4f-939c-2ba22dd71b36.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "5f098e34-499a-4650-b590-dc53b52f9201",
+    "path": "gnn/data/sinks/5f098e34-499a-4650-b590-dc53b52f9201.json",
+    "label": "Sink \u2014 Hamburg"
+  },
+  {
+    "id": "ef8904c8-6a56-4264-a527-04b32f49c619",
+    "path": "gnn/data/sinks/ef8904c8-6a56-4264-a527-04b32f49c619.json",
+    "label": "Sink \u2014 Osterholz-Scharmbeck"
+  },
+  {
+    "id": "541e0455-6f4a-4c3e-85b4-a850ff233e76",
+    "path": "gnn/data/sinks/541e0455-6f4a-4c3e-85b4-a850ff233e76.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "9c8302c3-529b-47e8-a4d2-f6689ad4417e",
+    "path": "gnn/data/sinks/9c8302c3-529b-47e8-a4d2-f6689ad4417e.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "bb2b1e12-36c4-453e-ab48-902c5bcf99de",
+    "path": "gnn/data/sinks/bb2b1e12-36c4-453e-ab48-902c5bcf99de.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "3a5a4796-99dd-456d-b574-5d79c79f9edc",
+    "path": "gnn/data/sinks/3a5a4796-99dd-456d-b574-5d79c79f9edc.json",
+    "label": "Sink \u2014 Tetenb\u00fcll"
+  },
+  {
+    "id": "73aef65e-dc53-4635-a177-bb2c10bab1df",
+    "path": "gnn/data/sinks/73aef65e-dc53-4635-a177-bb2c10bab1df.json",
+    "label": "Sink \u2014 Tetenb\u00fcll"
+  },
+  {
+    "id": "ba6d53fe-d820-41bb-bac0-f330ba57a4fb",
+    "path": "gnn/data/sinks/ba6d53fe-d820-41bb-bac0-f330ba57a4fb.json",
+    "label": "Sink \u2014 ba6d53fe\u2026"
+  },
+  {
+    "id": "50acab2b-758e-496d-b7c3-c4809bc6eb54",
+    "path": "gnn/data/sinks/50acab2b-758e-496d-b7c3-c4809bc6eb54.json",
+    "label": "Sink \u2014 50acab2b\u2026"
+  },
+  {
+    "id": "29524a34-a696-4e55-8a75-b54fc780fa42",
+    "path": "gnn/data/sinks/29524a34-a696-4e55-8a75-b54fc780fa42.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "57aad066-8a4b-43f9-beb6-3a494c30f39d",
+    "path": "gnn/data/sinks/57aad066-8a4b-43f9-beb6-3a494c30f39d.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "b4565f8d-f3d8-44c2-9697-bf684b0b3b5b",
+    "path": "gnn/data/sinks/b4565f8d-f3d8-44c2-9697-bf684b0b3b5b.json",
+    "label": "Sink \u2014 b4565f8d\u2026"
+  },
+  {
+    "id": "6940d4b8-c2ef-4170-a18c-c1a4fd7e0f19",
+    "path": "gnn/data/sinks/6940d4b8-c2ef-4170-a18c-c1a4fd7e0f19.json",
+    "label": "Sink \u2014 Herzhorn"
+  },
+  {
+    "id": "a48700a8-4ed1-430a-ab9b-b696dabcfb72",
+    "path": "gnn/data/sinks/a48700a8-4ed1-430a-ab9b-b696dabcfb72.json",
+    "label": "Sink \u2014 Steenfeld"
+  },
+  {
+    "id": "aaa9852e-71b7-4573-ba3b-27c02f9bdc65",
+    "path": "gnn/data/sinks/aaa9852e-71b7-4573-ba3b-27c02f9bdc65.json",
+    "label": "Sink \u2014 Lastrup"
+  },
+  {
+    "id": "02b6de01-e15c-49d5-b867-c8bc9e9e2021",
+    "path": "gnn/data/sinks/02b6de01-e15c-49d5-b867-c8bc9e9e2021.json",
+    "label": "Sink \u2014 Quarnbek"
+  },
+  {
+    "id": "4789629f-f5b2-4f3a-aa64-47f79d4b100f",
+    "path": "gnn/data/sinks/4789629f-f5b2-4f3a-aa64-47f79d4b100f.json",
+    "label": "Sink \u2014 Rotterdam"
+  },
+  {
+    "id": "57c434c3-9cf3-4a03-b6dc-6fbc462930e4",
+    "path": "gnn/data/sinks/57c434c3-9cf3-4a03-b6dc-6fbc462930e4.json",
+    "label": "Sink \u2014 Nortorf"
+  },
+  {
+    "id": "ba4f4826-0297-4905-bb03-799ed56521f1",
+    "path": "gnn/data/sinks/ba4f4826-0297-4905-bb03-799ed56521f1.json",
+    "label": "Sink \u2014 Horst"
+  },
+  {
+    "id": "44e5745e-0601-4574-b2f9-5b4402396365",
+    "path": "gnn/data/sinks/44e5745e-0601-4574-b2f9-5b4402396365.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "81df1122-4100-4292-ab49-cdc7e89f054d",
+    "path": "gnn/data/sinks/81df1122-4100-4292-ab49-cdc7e89f054d.json",
+    "label": "Sink \u2014 Rotterdam"
+  },
+  {
+    "id": "528b1026-9c4a-4526-9f39-4c6f22e2e946",
+    "path": "gnn/data/sinks/528b1026-9c4a-4526-9f39-4c6f22e2e946.json",
+    "label": "Sink \u2014 Bendorf"
+  },
+  {
+    "id": "9eb60421-ec85-49e9-8f15-0f9d0a46c4db",
+    "path": "gnn/data/sinks/9eb60421-ec85-49e9-8f15-0f9d0a46c4db.json",
+    "label": "Sink \u2014 Eddelak"
+  },
+  {
+    "id": "36439d56-7ab0-4e4d-8375-4e6ee52fc932",
+    "path": "gnn/data/sinks/36439d56-7ab0-4e4d-8375-4e6ee52fc932.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "adba731e-137b-44be-9eb7-ea36d1577400",
+    "path": "gnn/data/sinks/adba731e-137b-44be-9eb7-ea36d1577400.json",
+    "label": "Sink \u2014 Westermoor"
+  },
+  {
+    "id": "9a41ed21-a819-4f32-91cc-c242dcc2fa24",
+    "path": "gnn/data/sinks/9a41ed21-a819-4f32-91cc-c242dcc2fa24.json",
+    "label": "Sink \u2014 Westermoor"
+  },
+  {
+    "id": "3acf46c9-64ae-4420-b23a-164f0668f543",
+    "path": "gnn/data/sinks/3acf46c9-64ae-4420-b23a-164f0668f543.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "da4ed990-7d8f-411e-853d-62a86f4122f1",
+    "path": "gnn/data/sinks/da4ed990-7d8f-411e-853d-62a86f4122f1.json",
+    "label": "Sink \u2014 Gro\u00dfbarkau"
+  },
+  {
+    "id": "b0d91163-35e4-482c-8f65-bb513d68278d",
+    "path": "gnn/data/sinks/b0d91163-35e4-482c-8f65-bb513d68278d.json",
+    "label": "Sink \u2014 Gr\u00f6dinge"
+  },
+  {
+    "id": "8120a6bc-abb5-42a5-8bb1-345f7e6d6a71",
+    "path": "gnn/data/sinks/8120a6bc-abb5-42a5-8bb1-345f7e6d6a71.json",
+    "label": "Sink \u2014 Mittelangeln"
+  },
+  {
+    "id": "d9b86f9c-1c4d-46c3-80a3-a54fbe1e54d5",
+    "path": "gnn/data/sinks/d9b86f9c-1c4d-46c3-80a3-a54fbe1e54d5.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "dac7be6d-362e-496d-8a83-7eee6db183b3",
+    "path": "gnn/data/sinks/dac7be6d-362e-496d-8a83-7eee6db183b3.json",
+    "label": "Sink \u2014 Kellinghusen"
+  },
+  {
+    "id": "2ac2b46c-b69b-4b9a-b3cd-3f85e9dc3b14",
+    "path": "gnn/data/sinks/2ac2b46c-b69b-4b9a-b3cd-3f85e9dc3b14.json",
+    "label": "Sink \u2014 Kellinghusen"
+  },
+  {
+    "id": "1a9f8d22-28ef-46bf-bb3f-5c25190e73eb",
+    "path": "gnn/data/sinks/1a9f8d22-28ef-46bf-bb3f-5c25190e73eb.json",
+    "label": "Sink \u2014 Heide"
+  },
+  {
+    "id": "a07471e2-b01b-4534-8f59-8c6601fc6d85",
+    "path": "gnn/data/sinks/a07471e2-b01b-4534-8f59-8c6601fc6d85.json",
+    "label": "Sink \u2014 Horst"
+  },
+  {
+    "id": "20a563b6-8210-4f7b-8bb4-26e972f2ddc1",
+    "path": "gnn/data/sinks/20a563b6-8210-4f7b-8bb4-26e972f2ddc1.json",
+    "label": "Sink \u2014 Bendorf"
+  },
+  {
+    "id": "0d363d89-d1bc-4392-8e7e-d96e4a97425c",
+    "path": "gnn/data/sinks/0d363d89-d1bc-4392-8e7e-d96e4a97425c.json",
+    "label": "Sink \u2014 Gr\u00f6dinge"
+  },
+  {
+    "id": "a7d5f4f8-c186-4427-9bff-82763fc80521",
+    "path": "gnn/data/sinks/a7d5f4f8-c186-4427-9bff-82763fc80521.json",
+    "label": "Sink \u2014 Gr\u00f6dinge"
+  },
+  {
+    "id": "e6af4ffc-8d4c-4dfa-aed2-0e53cd42b7a6",
+    "path": "gnn/data/sinks/e6af4ffc-8d4c-4dfa-aed2-0e53cd42b7a6.json",
+    "label": "Sink \u2014 Gr\u00f6dinge"
+  },
+  {
+    "id": "3c7e7e65-949a-41ea-b4aa-eb0f110668c7",
+    "path": "gnn/data/sinks/3c7e7e65-949a-41ea-b4aa-eb0f110668c7.json",
+    "label": "Sink \u2014 Gr\u00f6dinge"
+  },
+  {
+    "id": "c5104939-23c2-452d-a718-47783ec541bb",
+    "path": "gnn/data/sinks/c5104939-23c2-452d-a718-47783ec541bb.json",
+    "label": "Sink \u2014 Sankt Michaelisdonn"
+  },
+  {
+    "id": "9dd5eb0e-78f9-4e71-bf5b-4795ba642896",
+    "path": "gnn/data/sinks/9dd5eb0e-78f9-4e71-bf5b-4795ba642896.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "a69a88dd-7b8c-43e1-9ca7-e68b39b7e819",
+    "path": "gnn/data/sinks/a69a88dd-7b8c-43e1-9ca7-e68b39b7e819.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "4580904c-665b-4c92-9940-e5625ee01ef6",
+    "path": "gnn/data/sinks/4580904c-665b-4c92-9940-e5625ee01ef6.json",
+    "label": "Sink \u2014 Herzhorn"
+  },
+  {
+    "id": "16468ba3-1197-414f-9a8f-06fc8333f258",
+    "path": "gnn/data/sinks/16468ba3-1197-414f-9a8f-06fc8333f258.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "07f87911-61ff-4af2-b0a0-bfec862080b1",
+    "path": "gnn/data/sinks/07f87911-61ff-4af2-b0a0-bfec862080b1.json",
+    "label": "Sink \u2014 Fockbek"
+  },
+  {
+    "id": "c7d2620b-fb58-4a4d-9881-e50edbe07d83",
+    "path": "gnn/data/sinks/c7d2620b-fb58-4a4d-9881-e50edbe07d83.json",
+    "label": "Sink \u2014 Fockbek"
+  },
+  {
+    "id": "f36d1ec6-8429-407e-beeb-3769de30b727",
+    "path": "gnn/data/sinks/f36d1ec6-8429-407e-beeb-3769de30b727.json",
+    "label": "Sink \u2014 Fockbek"
+  },
+  {
+    "id": "25a9e049-7ff0-42ef-947d-7ad8f8aea3dc",
+    "path": "gnn/data/sinks/25a9e049-7ff0-42ef-947d-7ad8f8aea3dc.json",
+    "label": "Sink \u2014 Wittenberge"
+  },
+  {
+    "id": "0ab3cb5b-6ed3-4186-94e7-43089670f33b",
+    "path": "gnn/data/sinks/0ab3cb5b-6ed3-4186-94e7-43089670f33b.json",
+    "label": "Sink \u2014 Heidm\u00fchlen"
+  },
+  {
+    "id": "5968d774-e8d5-40e2-b343-8695d9f85e7e",
+    "path": "gnn/data/sinks/5968d774-e8d5-40e2-b343-8695d9f85e7e.json",
+    "label": "Sink \u2014 Lastrup"
+  },
+  {
+    "id": "354da777-2503-469c-92b5-ffded1f5ed3a",
+    "path": "gnn/data/sinks/354da777-2503-469c-92b5-ffded1f5ed3a.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "abdee5bf-41da-4157-940e-e91fe843b7e0",
+    "path": "gnn/data/sinks/abdee5bf-41da-4157-940e-e91fe843b7e0.json",
+    "label": "Sink \u2014 Schafstedt"
+  },
+  {
+    "id": "0ae6ccff-8b29-4ddc-a4f5-bc4a04bd4b4b",
+    "path": "gnn/data/sinks/0ae6ccff-8b29-4ddc-a4f5-bc4a04bd4b4b.json",
+    "label": "Sink \u2014 Hamburg"
+  },
+  {
+    "id": "d6d18fd8-c777-426e-8512-55e68ea2ed47",
+    "path": "gnn/data/sinks/d6d18fd8-c777-426e-8512-55e68ea2ed47.json",
+    "label": "Sink \u2014 Lastrup"
+  },
+  {
+    "id": "4d2c7d30-a10c-4781-89a7-f6e51fa2a932",
+    "path": "gnn/data/sinks/4d2c7d30-a10c-4781-89a7-f6e51fa2a932.json",
+    "label": "Sink \u2014 Schafstedt"
+  },
+  {
+    "id": "0651e58c-0bdb-4db8-9d11-7ab887bee018",
+    "path": "gnn/data/sinks/0651e58c-0bdb-4db8-9d11-7ab887bee018.json",
+    "label": "Sink \u2014 Mildstedt"
+  },
+  {
+    "id": "1e58866d-1169-4be3-b3cd-419ac0603a83",
+    "path": "gnn/data/sinks/1e58866d-1169-4be3-b3cd-419ac0603a83.json",
+    "label": "Sink \u2014 Nordhastedt"
+  },
+  {
+    "id": "9edc3c66-52df-4cc4-b270-c1020550009b",
+    "path": "gnn/data/sinks/9edc3c66-52df-4cc4-b270-c1020550009b.json",
+    "label": "Sink \u2014 Bendorf"
+  },
+  {
+    "id": "e81d0960-2c98-4860-8a7d-7d95df6bd630",
+    "path": "gnn/data/sinks/e81d0960-2c98-4860-8a7d-7d95df6bd630.json",
+    "label": "Sink \u2014 Schmilau"
+  },
+  {
+    "id": "dc3ea729-c1b0-4db0-8e96-be4a89489cc4",
+    "path": "gnn/data/sinks/dc3ea729-c1b0-4db0-8e96-be4a89489cc4.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "d0e43974-5a88-430f-aadc-6ca46c888dbb",
+    "path": "gnn/data/sinks/d0e43974-5a88-430f-aadc-6ca46c888dbb.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "6b758b85-b52c-43e9-b69e-6b0030eb31e5",
+    "path": "gnn/data/sinks/6b758b85-b52c-43e9-b69e-6b0030eb31e5.json",
+    "label": "Sink \u2014 Herzhorn"
+  },
+  {
+    "id": "42f6b4cb-5273-4584-9e03-b5529e60f902",
+    "path": "gnn/data/sinks/42f6b4cb-5273-4584-9e03-b5529e60f902.json",
+    "label": "Sink \u2014 Hamburg"
+  },
+  {
+    "id": "b6420bcd-730a-41da-9589-7e38dbc5732a",
+    "path": "gnn/data/sinks/b6420bcd-730a-41da-9589-7e38dbc5732a.json",
+    "label": "Sink \u2014 Dellstedt"
+  },
+  {
+    "id": "3d7db07e-f0ac-470a-b346-b9a48bfed7e2",
+    "path": "gnn/data/sinks/3d7db07e-f0ac-470a-b346-b9a48bfed7e2.json",
+    "label": "Sink \u2014 Nortorf"
+  },
+  {
+    "id": "a246babf-ac20-46e4-a61e-6f13a57e7d38",
+    "path": "gnn/data/sinks/a246babf-ac20-46e4-a61e-6f13a57e7d38.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "4e9e873b-dd07-4201-b7e8-29528b6199f8",
+    "path": "gnn/data/sinks/4e9e873b-dd07-4201-b7e8-29528b6199f8.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "e59596ca-7289-4821-b62b-907b87915a55",
+    "path": "gnn/data/sinks/e59596ca-7289-4821-b62b-907b87915a55.json",
+    "label": "Sink \u2014 Bendorf"
+  },
+  {
+    "id": "7d5ba6b5-23ac-495c-8793-91ca181fb65c",
+    "path": "gnn/data/sinks/7d5ba6b5-23ac-495c-8793-91ca181fb65c.json",
+    "label": "Sink \u2014 Winsen"
+  },
+  {
+    "id": "87b9ca97-8b5a-4105-820f-b211379f00d2",
+    "path": "gnn/data/sinks/87b9ca97-8b5a-4105-820f-b211379f00d2.json",
+    "label": "Sink \u2014 Nettelsee"
+  },
+  {
+    "id": "76875927-2df7-4093-bf6a-1db924a7c4c0",
+    "path": "gnn/data/sinks/76875927-2df7-4093-bf6a-1db924a7c4c0.json",
+    "label": "Sink \u2014 Memmingen"
+  },
+  {
+    "id": "4035886a-9c06-4cc3-bd74-5c46736de5d8",
+    "path": "gnn/data/sinks/4035886a-9c06-4cc3-bd74-5c46736de5d8.json",
+    "label": "Sink \u2014 Dammfleth"
+  },
+  {
+    "id": "2d98f100-8a73-4238-bf16-963ffbe87ebf",
+    "path": "gnn/data/sinks/2d98f100-8a73-4238-bf16-963ffbe87ebf.json",
+    "label": "Sink \u2014 Sankt Michaelisdonn"
+  },
+  {
+    "id": "cd62339e-ca53-4a35-8f05-0aa1f2e07362",
+    "path": "gnn/data/sinks/cd62339e-ca53-4a35-8f05-0aa1f2e07362.json",
+    "label": "Sink \u2014 Dellstedt"
+  },
+  {
+    "id": "c691f973-4c3d-4f97-b45b-4dc9cbb9a3e9",
+    "path": "gnn/data/sinks/c691f973-4c3d-4f97-b45b-4dc9cbb9a3e9.json",
+    "label": "Sink \u2014 Eddelak"
+  },
+  {
+    "id": "3eef6e06-d5ff-4921-82c6-dca2325234fc",
+    "path": "gnn/data/sinks/3eef6e06-d5ff-4921-82c6-dca2325234fc.json",
+    "label": "Sink \u2014 Dammfleth"
+  },
+  {
+    "id": "e8395c47-e162-401f-ba80-672790e13ca8",
+    "path": "gnn/data/sinks/e8395c47-e162-401f-ba80-672790e13ca8.json",
+    "label": "Sink \u2014 Dammfleth"
+  },
+  {
+    "id": "54cdfe64-cfb4-49c9-8bb7-841e1deab2df",
+    "path": "gnn/data/sinks/54cdfe64-cfb4-49c9-8bb7-841e1deab2df.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "cfb0e986-50be-4157-bcb0-b53669d31b42",
+    "path": "gnn/data/sinks/cfb0e986-50be-4157-bcb0-b53669d31b42.json",
+    "label": "Sink \u2014 Dellstedt"
+  },
+  {
+    "id": "362ce62a-db9c-4a93-a88d-fac4a29361a0",
+    "path": "gnn/data/sinks/362ce62a-db9c-4a93-a88d-fac4a29361a0.json",
+    "label": "Sink \u2014 Westermoor"
+  },
+  {
+    "id": "950e1ed7-5a0a-4c7f-9cb7-a1b750f505ea",
+    "path": "gnn/data/sinks/950e1ed7-5a0a-4c7f-9cb7-a1b750f505ea.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "ccbe6f34-61b5-432e-84af-567db6db5215",
+    "path": "gnn/data/sinks/ccbe6f34-61b5-432e-84af-567db6db5215.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "3bc5326f-93d3-4eea-8bda-d59223e794ec",
+    "path": "gnn/data/sinks/3bc5326f-93d3-4eea-8bda-d59223e794ec.json",
+    "label": "Sink \u2014 Laupheim"
+  },
+  {
+    "id": "ce453b8b-02d2-4c4c-b4eb-ece5669302d9",
+    "path": "gnn/data/sinks/ce453b8b-02d2-4c4c-b4eb-ece5669302d9.json",
+    "label": "Sink \u2014 Laupheim"
+  },
+  {
+    "id": "7f8df4e4-5e3a-47d7-82c2-f2de8e744f95",
+    "path": "gnn/data/sinks/7f8df4e4-5e3a-47d7-82c2-f2de8e744f95.json",
+    "label": "Sink \u2014 Kellinghusen"
+  },
+  {
+    "id": "2a18079d-3463-4dbb-8fe4-968594ab9441",
+    "path": "gnn/data/sinks/2a18079d-3463-4dbb-8fe4-968594ab9441.json",
+    "label": "Sink \u2014 Sp\u00f8ttrup"
+  },
+  {
+    "id": "d69e6aac-c375-44d3-9e98-507316be7340",
+    "path": "gnn/data/sinks/d69e6aac-c375-44d3-9e98-507316be7340.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "456915ff-4c72-4f38-b2fe-4b855ff1ded9",
+    "path": "gnn/data/sinks/456915ff-4c72-4f38-b2fe-4b855ff1ded9.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "6d96193c-4a4e-458c-b106-d11fe11437bf",
+    "path": "gnn/data/sinks/6d96193c-4a4e-458c-b106-d11fe11437bf.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "ae852f52-8650-44e3-aad1-0d678c218167",
+    "path": "gnn/data/sinks/ae852f52-8650-44e3-aad1-0d678c218167.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "1dc95e83-a8c0-4090-ac80-34f0fec9b6a4",
+    "path": "gnn/data/sinks/1dc95e83-a8c0-4090-ac80-34f0fec9b6a4.json",
+    "label": "Sink \u2014 Weesby"
+  },
+  {
+    "id": "93dc7c94-a090-41a2-87e4-6602e053ab4b",
+    "path": "gnn/data/sinks/93dc7c94-a090-41a2-87e4-6602e053ab4b.json",
+    "label": "Sink \u2014 Weesby"
+  },
+  {
+    "id": "eef7b2d9-a4aa-42ff-8c77-8f7edf84fab2",
+    "path": "gnn/data/sinks/eef7b2d9-a4aa-42ff-8c77-8f7edf84fab2.json",
+    "label": "Sink \u2014 Weesby"
+  },
+  {
+    "id": "bcea2809-42f6-48f3-baa3-ea30aad02bd1",
+    "path": "gnn/data/sinks/bcea2809-42f6-48f3-baa3-ea30aad02bd1.json",
+    "label": "Sink \u2014 Saterland"
+  },
+  {
+    "id": "35b2533f-9f2b-4ff1-9340-5da206386f69",
+    "path": "gnn/data/sinks/35b2533f-9f2b-4ff1-9340-5da206386f69.json",
+    "label": "Sink \u2014 Hamburg"
+  },
+  {
+    "id": "b076e600-448f-481c-9783-86c88d9ebb84",
+    "path": "gnn/data/sinks/b076e600-448f-481c-9783-86c88d9ebb84.json",
+    "label": "Sink \u2014 Dammfleth"
+  },
+  {
+    "id": "c6d9ffc6-74e1-4b82-9623-ac62d15b4339",
+    "path": "gnn/data/sinks/c6d9ffc6-74e1-4b82-9623-ac62d15b4339.json",
+    "label": "Sink \u2014 Wiefelstede"
+  },
+  {
+    "id": "f6da9532-0cbb-437e-ab7f-5d987a03fd6c",
+    "path": "gnn/data/sinks/f6da9532-0cbb-437e-ab7f-5d987a03fd6c.json",
+    "label": "Sink \u2014 Herzhorn"
+  },
+  {
+    "id": "3eef151e-e680-4c08-a078-46a61257ab72",
+    "path": "gnn/data/sinks/3eef151e-e680-4c08-a078-46a61257ab72.json",
+    "label": "Sink \u2014 Tetenb\u00fcll"
+  },
+  {
+    "id": "73a2c193-d4fd-4077-9e4e-1f7323303937",
+    "path": "gnn/data/sinks/73a2c193-d4fd-4077-9e4e-1f7323303937.json",
+    "label": "Sink \u2014 Varel"
+  },
+  {
+    "id": "c700d0ab-b8b9-41e4-8e55-208d1f2456f4",
+    "path": "gnn/data/sinks/c700d0ab-b8b9-41e4-8e55-208d1f2456f4.json",
+    "label": "Sink \u2014 Haren (Ems)"
+  },
+  {
+    "id": "d2659917-5b9c-4c34-b451-a2fc4272fdf2",
+    "path": "gnn/data/sinks/d2659917-5b9c-4c34-b451-a2fc4272fdf2.json",
+    "label": "Sink \u2014 Glasau"
+  },
+  {
+    "id": "e97ada2e-5e2d-4f91-91a9-030cf82667ee",
+    "path": "gnn/data/sinks/e97ada2e-5e2d-4f91-91a9-030cf82667ee.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "d09d79b4-7aef-4c8d-8480-43c32f2c4c6d",
+    "path": "gnn/data/sinks/d09d79b4-7aef-4c8d-8480-43c32f2c4c6d.json",
+    "label": "Sink \u2014 Sankt Annen"
+  },
+  {
+    "id": "f2a65956-c87a-4e1d-97b7-d9095c9b61e6",
+    "path": "gnn/data/sinks/f2a65956-c87a-4e1d-97b7-d9095c9b61e6.json",
+    "label": "Sink \u2014 Brake (Unterweser)"
+  },
+  {
+    "id": "0e908599-6511-410d-92e3-d132ad3afe49",
+    "path": "gnn/data/sinks/0e908599-6511-410d-92e3-d132ad3afe49.json",
+    "label": "Sink \u2014 Berlin"
+  },
+  {
+    "id": "f5a1854e-a737-4ee1-b743-cbc271a386fc",
+    "path": "gnn/data/sinks/f5a1854e-a737-4ee1-b743-cbc271a386fc.json",
+    "label": "Sink \u2014 Sankt Michaelisdonn"
+  },
+  {
+    "id": "256e178c-ddfb-49d9-bc58-a75d68695607",
+    "path": "gnn/data/sinks/256e178c-ddfb-49d9-bc58-a75d68695607.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "0389d789-a4c3-49d6-b2ec-63f9c8d3b264",
+    "path": "gnn/data/sinks/0389d789-a4c3-49d6-b2ec-63f9c8d3b264.json",
+    "label": "Sink \u2014 Geeste"
+  },
+  {
+    "id": "20a4ef76-3a27-4468-9588-7481808a54ab",
+    "path": "gnn/data/sinks/20a4ef76-3a27-4468-9588-7481808a54ab.json",
+    "label": "Sink \u2014 Geeste"
+  },
+  {
+    "id": "edbfe422-0c8e-46bd-aedf-1577b1b9def5",
+    "path": "gnn/data/sinks/edbfe422-0c8e-46bd-aedf-1577b1b9def5.json",
+    "label": "Sink \u2014 Dammfleth"
+  },
+  {
+    "id": "00edd017-5313-4e36-9a1c-716ace0e0368",
+    "path": "gnn/data/sinks/00edd017-5313-4e36-9a1c-716ace0e0368.json",
+    "label": "Sink \u2014 Rendsburg"
+  },
+  {
+    "id": "96801fde-ee57-4934-b530-0d7b39ddd9c2",
+    "path": "gnn/data/sinks/96801fde-ee57-4934-b530-0d7b39ddd9c2.json",
+    "label": "Sink \u2014 S\u00fcderhastedt"
+  },
+  {
+    "id": "3f7fa1ea-2f23-456a-a372-a3dde4fae4eb",
+    "path": "gnn/data/sinks/3f7fa1ea-2f23-456a-a372-a3dde4fae4eb.json",
+    "label": "Sink \u2014 Lastrup"
+  },
+  {
+    "id": "6b2d62db-3b6b-4031-ad8d-50888826a3ac",
+    "path": "gnn/data/sinks/6b2d62db-3b6b-4031-ad8d-50888826a3ac.json",
+    "label": "Sink \u2014 Dammfleth"
+  },
+  {
+    "id": "01d77f84-f0bc-4334-92a9-f946d0f5bb2a",
+    "path": "gnn/data/sinks/01d77f84-f0bc-4334-92a9-f946d0f5bb2a.json",
+    "label": "Sink \u2014 Horst"
+  },
+  {
+    "id": "c522cd4c-074b-4951-a8b3-6939a109d575",
+    "path": "gnn/data/sinks/c522cd4c-074b-4951-a8b3-6939a109d575.json",
+    "label": "Sink \u2014 Schiedam"
+  },
+  {
+    "id": "2e04f547-d935-4eff-9528-1b8537305edf",
+    "path": "gnn/data/sinks/2e04f547-d935-4eff-9528-1b8537305edf.json",
+    "label": "Sink \u2014 Bendorf"
+  },
+  {
+    "id": "5847099c-72f5-44bf-80ab-a648590d12ec",
+    "path": "gnn/data/sinks/5847099c-72f5-44bf-80ab-a648590d12ec.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "a062f289-dbb6-48f5-b1a0-d22caec2ac4c",
+    "path": "gnn/data/sinks/a062f289-dbb6-48f5-b1a0-d22caec2ac4c.json",
+    "label": "Sink \u2014 Dammfleth"
+  },
+  {
+    "id": "90be38df-0bb3-403e-a67f-4d807076f6a5",
+    "path": "gnn/data/sinks/90be38df-0bb3-403e-a67f-4d807076f6a5.json",
+    "label": "Sink \u2014 Kleve"
+  },
+  {
+    "id": "d4052710-bf9d-4655-9e64-248b65d8cef9",
+    "path": "gnn/data/sinks/d4052710-bf9d-4655-9e64-248b65d8cef9.json",
+    "label": "Sink \u2014 Quarnbek"
+  },
+  {
+    "id": "9b7f4fe8-1e8f-4c27-af9f-840a5c11445a",
+    "path": "gnn/data/sinks/9b7f4fe8-1e8f-4c27-af9f-840a5c11445a.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "5cfcce45-546b-44dc-bd1b-afba8e3f6d25",
+    "path": "gnn/data/sinks/5cfcce45-546b-44dc-bd1b-afba8e3f6d25.json",
+    "label": "Sink \u2014 Ecklak"
+  },
+  {
+    "id": "454aab4c-9565-4f5c-8b6e-38cbc726b0c1",
+    "path": "gnn/data/sinks/454aab4c-9565-4f5c-8b6e-38cbc726b0c1.json",
+    "label": "Sink \u2014 H\u00e4lln\u00e4s"
+  },
+  {
+    "id": "4882d79f-3a14-46ed-9c2a-cc888527edc8",
+    "path": "gnn/data/sinks/4882d79f-3a14-46ed-9c2a-cc888527edc8.json",
+    "label": "Sink \u2014 H\u00e4lln\u00e4s"
+  },
+  {
+    "id": "bab22f37-bac4-4693-98ea-846abb9ed766",
+    "path": "gnn/data/sinks/bab22f37-bac4-4693-98ea-846abb9ed766.json",
+    "label": "Sink \u2014 Beidenfleth"
+  },
+  {
+    "id": "cf10b2da-aca4-4e91-95fd-90bc36ae26cc",
+    "path": "gnn/data/sinks/cf10b2da-aca4-4e91-95fd-90bc36ae26cc.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "4955431f-c7e0-473a-9669-65a15bbbceaa",
+    "path": "gnn/data/sinks/4955431f-c7e0-473a-9669-65a15bbbceaa.json",
+    "label": "Sink \u2014 Koldenb\u00fcttel"
+  },
+  {
+    "id": "9ff456a2-fca7-4ca1-83b2-53bea6b321b6",
+    "path": "gnn/data/sinks/9ff456a2-fca7-4ca1-83b2-53bea6b321b6.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "fab71780-cae4-4e9f-95e8-2bddd2674743",
+    "path": "gnn/data/sinks/fab71780-cae4-4e9f-95e8-2bddd2674743.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "80b9e8a6-9854-4eca-aba2-10c89d329980",
+    "path": "gnn/data/sinks/80b9e8a6-9854-4eca-aba2-10c89d329980.json",
+    "label": "Sink \u2014 Hannover"
+  },
+  {
+    "id": "5e9d73d8-9ba4-4949-b205-61ca793ddda6",
+    "path": "gnn/data/sinks/5e9d73d8-9ba4-4949-b205-61ca793ddda6.json",
+    "label": "Sink \u2014 Bendorf"
+  },
+  {
+    "id": "ae3f3260-abec-4a07-9603-f223e370b606",
+    "path": "gnn/data/sinks/ae3f3260-abec-4a07-9603-f223e370b606.json",
+    "label": "Sink \u2014 Rendsburg"
+  },
+  {
+    "id": "6e30480e-e48d-4d3b-b46e-8553091663d7",
+    "path": "gnn/data/sinks/6e30480e-e48d-4d3b-b46e-8553091663d7.json",
+    "label": "Sink \u2014 Uckerland"
+  },
+  {
+    "id": "da993b59-6444-497d-9a17-ee6d97c47005",
+    "path": "gnn/data/sinks/da993b59-6444-497d-9a17-ee6d97c47005.json",
+    "label": "Sink \u2014 Krumstedt"
+  },
+  {
+    "id": "ddc8fcff-086f-4fac-8070-87fcf56af606",
+    "path": "gnn/data/sinks/ddc8fcff-086f-4fac-8070-87fcf56af606.json",
+    "label": "Sink \u2014 Walsrode"
+  },
+  {
+    "id": "e6b71cf4-475c-4125-a0a8-894ab7adefc5",
+    "path": "gnn/data/sinks/e6b71cf4-475c-4125-a0a8-894ab7adefc5.json",
+    "label": "Sink \u2014 Siggelkow"
+  },
+  {
+    "id": "e0ef9030-3a46-47e3-800e-e55613b68996",
+    "path": "gnn/data/sinks/e0ef9030-3a46-47e3-800e-e55613b68996.json",
+    "label": "Sink \u2014 Dammfleth"
+  },
+  {
+    "id": "8d89d6e3-8034-45a2-a267-fce3d2e0e949",
+    "path": "gnn/data/sinks/8d89d6e3-8034-45a2-a267-fce3d2e0e949.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "245a7da1-f468-419e-afd7-8b0fea995825",
+    "path": "gnn/data/sinks/245a7da1-f468-419e-afd7-8b0fea995825.json",
+    "label": "Sink \u2014 Hamburg"
+  },
+  {
+    "id": "e74161f5-f2b6-4c75-ba60-8989027b8bc5",
+    "path": "gnn/data/sinks/e74161f5-f2b6-4c75-ba60-8989027b8bc5.json",
+    "label": "Sink \u2014 Kronprinzenkoog"
+  },
+  {
+    "id": "304e521c-341a-44d5-b94d-42d97af987c5",
+    "path": "gnn/data/sinks/304e521c-341a-44d5-b94d-42d97af987c5.json",
+    "label": "Sink \u2014 Dammfleth"
+  },
+  {
+    "id": "451a780c-9283-4714-b93b-baeb0f3f9380",
+    "path": "gnn/data/sinks/451a780c-9283-4714-b93b-baeb0f3f9380.json",
+    "label": "Sink \u2014 Hamburg"
+  },
+  {
+    "id": "e139c446-f11b-4a2b-b05d-e4a09c12071e",
+    "path": "gnn/data/sinks/e139c446-f11b-4a2b-b05d-e4a09c12071e.json",
+    "label": "Sink \u2014 Bobitz"
+  },
+  {
+    "id": "3c2c7570-f01d-451e-b51c-ff9eb6e58d64",
+    "path": "gnn/data/sinks/3c2c7570-f01d-451e-b51c-ff9eb6e58d64.json",
+    "label": "Sink \u2014 Sankt Michaelisdonn"
+  },
+  {
+    "id": "8dc6ea57-9779-4235-a82b-3d8b6604715c",
+    "path": "gnn/data/sinks/8dc6ea57-9779-4235-a82b-3d8b6604715c.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "34cc04ab-eb13-447d-98af-108d4f30ff85",
+    "path": "gnn/data/sinks/34cc04ab-eb13-447d-98af-108d4f30ff85.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "7c0f6b01-d3e5-44ce-9890-ef1e15b29f0e",
+    "path": "gnn/data/sinks/7c0f6b01-d3e5-44ce-9890-ef1e15b29f0e.json",
+    "label": "Sink \u2014 Hamburg"
+  },
+  {
+    "id": "282244dc-867e-4c8a-bd98-b2de88eacdce",
+    "path": "gnn/data/sinks/282244dc-867e-4c8a-bd98-b2de88eacdce.json",
+    "label": "Sink \u2014 Schiedam"
+  },
+  {
+    "id": "1fbc5bb1-068e-4917-b3f4-caca6c46da2b",
+    "path": "gnn/data/sinks/1fbc5bb1-068e-4917-b3f4-caca6c46da2b.json",
+    "label": "Sink \u2014 Eislingen/Fils"
+  },
+  {
+    "id": "8fcfe1b0-9eb0-4216-a41d-0a84bb0d1cf1",
+    "path": "gnn/data/sinks/8fcfe1b0-9eb0-4216-a41d-0a84bb0d1cf1.json",
+    "label": "Sink \u2014 Fockbek"
+  },
+  {
+    "id": "2fa8a75e-1967-4fad-9de5-d153ff1cf469",
+    "path": "gnn/data/sinks/2fa8a75e-1967-4fad-9de5-d153ff1cf469.json",
+    "label": "Sink \u2014 Vindeln"
+  },
+  {
+    "id": "09024c58-b0ad-4ffb-b23e-566649b19d5b",
+    "path": "gnn/data/sinks/09024c58-b0ad-4ffb-b23e-566649b19d5b.json",
+    "label": "Sink \u2014 Vindeln"
+  },
+  {
+    "id": "5b2d1e24-1577-4c9b-8f33-bfb4d5e968e2",
+    "path": "gnn/data/sinks/5b2d1e24-1577-4c9b-8f33-bfb4d5e968e2.json",
+    "label": "Sink \u2014 5b2d1e24\u2026"
+  },
+  {
+    "id": "246c74f3-d76a-47bc-9fb9-46a206ff432b",
+    "path": "gnn/data/sinks/246c74f3-d76a-47bc-9fb9-46a206ff432b.json",
+    "label": "Sink \u2014 Weesby"
+  },
+  {
+    "id": "f153d0af-55d1-45b1-969a-27cc5cabc49a",
+    "path": "gnn/data/sinks/f153d0af-55d1-45b1-969a-27cc5cabc49a.json",
+    "label": "Sink \u2014 Bendorf"
+  },
+  {
+    "id": "752004b1-fd01-420d-951f-625122c34ec7",
+    "path": "gnn/data/sinks/752004b1-fd01-420d-951f-625122c34ec7.json",
+    "label": "Sink \u2014 Nordhastedt"
+  },
+  {
+    "id": "81d22111-a036-42bd-a774-6dea4bd1e8ac",
+    "path": "gnn/data/sinks/81d22111-a036-42bd-a774-6dea4bd1e8ac.json",
+    "label": "Sink \u2014 Offenb\u00fcttel"
+  },
+  {
+    "id": "4c9deb33-e0f8-4893-8eae-d35c98a13953",
+    "path": "gnn/data/sinks/4c9deb33-e0f8-4893-8eae-d35c98a13953.json",
+    "label": "Sink \u2014 Schafstedt"
+  },
+  {
+    "id": "e5dad748-5179-4b35-9745-ffad09c55a4a",
+    "path": "gnn/data/sinks/e5dad748-5179-4b35-9745-ffad09c55a4a.json",
+    "label": "Sink \u2014 e5dad748\u2026"
+  },
+  {
+    "id": "48cea8ea-bac6-46da-b0b7-f5f0c9d4ffb8",
+    "path": "gnn/data/sinks/48cea8ea-bac6-46da-b0b7-f5f0c9d4ffb8.json",
+    "label": "Sink \u2014 Hamburg"
+  },
+  {
+    "id": "671df86d-6d35-4502-bd92-db65404a61d6",
+    "path": "gnn/data/sinks/671df86d-6d35-4502-bd92-db65404a61d6.json",
+    "label": "Sink \u2014 Westermoor"
+  },
+  {
+    "id": "d2d9f4e2-b0e2-4d9e-929a-5291ffd79e8b",
+    "path": "gnn/data/sinks/d2d9f4e2-b0e2-4d9e-929a-5291ffd79e8b.json",
+    "label": "Sink \u2014 Bahrenfleth"
+  },
+  {
+    "id": "5df8cd87-8dd9-4d32-b9ba-3cb9a99095ae",
+    "path": "gnn/data/sinks/5df8cd87-8dd9-4d32-b9ba-3cb9a99095ae.json",
+    "label": "Sink \u2014 Hamburg"
+  },
+  {
+    "id": "662cae5c-860e-4721-a9ed-f6b6927a5150",
+    "path": "gnn/data/sinks/662cae5c-860e-4721-a9ed-f6b6927a5150.json",
+    "label": "Sink \u2014 Dammfleth"
+  },
+  {
+    "id": "8f6b8e4d-2bde-4b4b-9378-ab5e54578b72",
+    "path": "gnn/data/sinks/8f6b8e4d-2bde-4b4b-9378-ab5e54578b72.json",
+    "label": "Sink \u2014 Dammfleth"
+  },
+  {
+    "id": "c74d8af2-3ec3-480e-af67-cefec8656734",
+    "path": "gnn/data/sinks/c74d8af2-3ec3-480e-af67-cefec8656734.json",
+    "label": "Sink \u2014 Neuendorf-Sachsenbande"
+  },
+  {
+    "id": "9152997e-fe4d-40f0-8770-f2bd87e82a80",
+    "path": "gnn/data/sinks/9152997e-fe4d-40f0-8770-f2bd87e82a80.json",
+    "label": "Sink \u2014 Winsen"
+  },
+  {
+    "id": "58b1bf47-a336-4bc6-b5ae-fd784df169b0",
+    "path": "gnn/data/sinks/58b1bf47-a336-4bc6-b5ae-fd784df169b0.json",
+    "label": "Sink \u2014 Neustadt am R\u00fcbenberge"
+  },
+  {
+    "id": "57ba99c4-7e64-47d8-a56a-b893b9d686ed",
+    "path": "gnn/data/sinks/57ba99c4-7e64-47d8-a56a-b893b9d686ed.json",
+    "label": "Sink \u2014 Walsrode"
+  },
+  {
+    "id": "04493d6f-2714-4cff-9ecd-198a226bb5cc",
+    "path": "gnn/data/sinks/04493d6f-2714-4cff-9ecd-198a226bb5cc.json",
+    "label": "Sink \u2014 Bendorf"
+  },
+  {
+    "id": "5a8b2604-d46c-4ebf-8a3b-33f53ddc3248",
+    "path": "gnn/data/sinks/5a8b2604-d46c-4ebf-8a3b-33f53ddc3248.json",
+    "label": "Sink \u2014 Glasau"
+  },
+  {
+    "id": "df25fc75-8771-4e62-937e-f7d2b80c4e7f",
+    "path": "gnn/data/sinks/df25fc75-8771-4e62-937e-f7d2b80c4e7f.json",
+    "label": "Sink \u2014 Karlum"
+  },
+  {
+    "id": "1caa1037-da3c-4635-92fe-7f9e424a4e24",
+    "path": "gnn/data/sinks/1caa1037-da3c-4635-92fe-7f9e424a4e24.json",
+    "label": "Sink \u2014 Laupheim"
+  },
+  {
+    "id": "44b4a24f-79a2-469a-ae06-3c77a4705c4f",
+    "path": "gnn/data/sinks/44b4a24f-79a2-469a-ae06-3c77a4705c4f.json",
+    "label": "Sink \u2014 Offenb\u00fcttel"
+  },
+  {
+    "id": "17d9a5a1-49bc-47c2-a12a-3b2f05696830",
+    "path": "gnn/data/sinks/17d9a5a1-49bc-47c2-a12a-3b2f05696830.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "544385ee-e409-452f-8f2e-170608df8997",
+    "path": "gnn/data/sinks/544385ee-e409-452f-8f2e-170608df8997.json",
+    "label": "Sink \u2014 Sankt Michaelisdonn"
+  },
+  {
+    "id": "3b54731d-da16-46c8-aef7-af1864a7e70a",
+    "path": "gnn/data/sinks/3b54731d-da16-46c8-aef7-af1864a7e70a.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "0a35894d-9176-40a4-a52c-15895d783bca",
+    "path": "gnn/data/sinks/0a35894d-9176-40a4-a52c-15895d783bca.json",
+    "label": "Sink \u2014 Laupheim"
+  },
+  {
+    "id": "b9b762ec-849e-4e41-8f15-ac93dd509931",
+    "path": "gnn/data/sinks/b9b762ec-849e-4e41-8f15-ac93dd509931.json",
+    "label": "Sink \u2014 b9b762ec\u2026"
+  },
+  {
+    "id": "4f5b8a86-2f2a-447b-91b9-b68ac30f535f",
+    "path": "gnn/data/sinks/4f5b8a86-2f2a-447b-91b9-b68ac30f535f.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "7e95c7af-4f8c-419e-a86b-618c0d063337",
+    "path": "gnn/data/sinks/7e95c7af-4f8c-419e-a86b-618c0d063337.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "7fbe58a4-31ab-460d-8601-be3ec30819da",
+    "path": "gnn/data/sinks/7fbe58a4-31ab-460d-8601-be3ec30819da.json",
+    "label": "Sink \u2014 Flintbek"
+  },
+  {
+    "id": "1531e1d4-a314-414a-a8fe-cb7d8758e80e",
+    "path": "gnn/data/sinks/1531e1d4-a314-414a-a8fe-cb7d8758e80e.json",
+    "label": "Sink \u2014 Heidm\u00fchlen"
+  },
+  {
+    "id": "e7708116-6b58-4d47-9e30-b713c5d683b3",
+    "path": "gnn/data/sinks/e7708116-6b58-4d47-9e30-b713c5d683b3.json",
+    "label": "Sink \u2014 Heidm\u00fchlen"
+  },
+  {
+    "id": "2591dda4-e97d-4443-83f2-cd83c38139f8",
+    "path": "gnn/data/sinks/2591dda4-e97d-4443-83f2-cd83c38139f8.json",
+    "label": "Sink \u2014 Winsen"
+  },
+  {
+    "id": "af3e6e2c-9608-47a9-8674-b25f71d8fb75",
+    "path": "gnn/data/sinks/af3e6e2c-9608-47a9-8674-b25f71d8fb75.json",
+    "label": "Sink \u2014 Offenb\u00fcttel"
+  },
+  {
+    "id": "2695fd29-c7a1-4eb2-af2c-25bd0a6cd257",
+    "path": "gnn/data/sinks/2695fd29-c7a1-4eb2-af2c-25bd0a6cd257.json",
+    "label": "Sink \u2014 Bendorf"
+  },
+  {
+    "id": "cc56d450-425d-4772-818e-82c5f40b1e3c",
+    "path": "gnn/data/sinks/cc56d450-425d-4772-818e-82c5f40b1e3c.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "5d7f7950-4d9b-4e11-bd4f-b9d45c9b4233",
+    "path": "gnn/data/sinks/5d7f7950-4d9b-4e11-bd4f-b9d45c9b4233.json",
+    "label": "Sink \u2014 Siggelkow"
+  },
+  {
+    "id": "5a31f7bf-5a3a-4e8c-ba0a-b6006c83db09",
+    "path": "gnn/data/sinks/5a31f7bf-5a3a-4e8c-ba0a-b6006c83db09.json",
+    "label": "Sink \u2014 Siggelkow"
+  },
+  {
+    "id": "4d4255d8-8b33-439a-9f78-0362e06a1f59",
+    "path": "gnn/data/sinks/4d4255d8-8b33-439a-9f78-0362e06a1f59.json",
+    "label": "Sink \u2014 Apen"
+  },
+  {
+    "id": "6cfe657b-40f2-4b13-a42e-ea7cb6d885d0",
+    "path": "gnn/data/sinks/6cfe657b-40f2-4b13-a42e-ea7cb6d885d0.json",
+    "label": "Sink \u2014 Schafstedt"
+  },
+  {
+    "id": "239dc2a8-887f-4357-b698-b93bf11baaf3",
+    "path": "gnn/data/sinks/239dc2a8-887f-4357-b698-b93bf11baaf3.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "402fb795-9af6-44b7-8a35-e28165375ea3",
+    "path": "gnn/data/sinks/402fb795-9af6-44b7-8a35-e28165375ea3.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "2cdd0759-769a-4fd5-ae0f-ab68dea540b7",
+    "path": "gnn/data/sinks/2cdd0759-769a-4fd5-ae0f-ab68dea540b7.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "72629a4e-5296-4f1a-91df-4fc750af429b",
+    "path": "gnn/data/sinks/72629a4e-5296-4f1a-91df-4fc750af429b.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "92def75a-da51-464a-a706-7428cca57fbc",
+    "path": "gnn/data/sinks/92def75a-da51-464a-a706-7428cca57fbc.json",
+    "label": "Sink \u2014 Bochum"
+  },
+  {
+    "id": "a1183f36-d7d2-4e3d-a83b-d50942dfb306",
+    "path": "gnn/data/sinks/a1183f36-d7d2-4e3d-a83b-d50942dfb306.json",
+    "label": "Sink \u2014 Wiefelstede"
+  },
+  {
+    "id": "21629e09-780e-4910-b354-37ba2061e839",
+    "path": "gnn/data/sinks/21629e09-780e-4910-b354-37ba2061e839.json",
+    "label": "Sink \u2014 Wiefelstede"
+  },
+  {
+    "id": "b0e1acf0-a45e-4b49-8851-8f7b361f63b3",
+    "path": "gnn/data/sinks/b0e1acf0-a45e-4b49-8851-8f7b361f63b3.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "6bb03ab8-7eb0-43d5-8a44-a0064b1a8926",
+    "path": "gnn/data/sinks/6bb03ab8-7eb0-43d5-8a44-a0064b1a8926.json",
+    "label": "Sink \u2014 Oldenburg"
+  },
+  {
+    "id": "64796fdc-d1fd-476e-9a9d-4e1cf88fb3e8",
+    "path": "gnn/data/sinks/64796fdc-d1fd-476e-9a9d-4e1cf88fb3e8.json",
+    "label": "Sink \u2014 Dammfleth"
+  },
+  {
+    "id": "7c15409c-5bc1-4783-89d5-f9d4bed7e467",
+    "path": "gnn/data/sinks/7c15409c-5bc1-4783-89d5-f9d4bed7e467.json",
+    "label": "Sink \u2014 Bendorf"
+  },
+  {
+    "id": "18c16130-f4eb-4bb3-bf89-85a67039ba8f",
+    "path": "gnn/data/sinks/18c16130-f4eb-4bb3-bf89-85a67039ba8f.json",
+    "label": "Sink \u2014 Aebtissinwisch"
+  },
+  {
+    "id": "2544a1f5-4f67-41b7-9e0b-ca153791be07",
+    "path": "gnn/data/sinks/2544a1f5-4f67-41b7-9e0b-ca153791be07.json",
+    "label": "Sink \u2014 Dammfleth"
+  },
+  {
+    "id": "cc794b63-7204-463d-9667-5d22f8117145",
+    "path": "gnn/data/sinks/cc794b63-7204-463d-9667-5d22f8117145.json",
+    "label": "Sink \u2014 Nortorf"
+  },
+  {
+    "id": "a8d07b0f-e9a6-4a71-a57d-f05ce2b42429",
+    "path": "gnn/data/sinks/a8d07b0f-e9a6-4a71-a57d-f05ce2b42429.json",
+    "label": "Sink \u2014 Dammfleth"
+  },
+  {
+    "id": "1fc41e28-3153-4cf1-a228-f6ce3e6b1967",
+    "path": "gnn/data/sinks/1fc41e28-3153-4cf1-a228-f6ce3e6b1967.json",
+    "label": "Sink \u2014 Wittenberge"
+  },
+  {
+    "id": "94ef085a-a1c2-4167-a642-059344d43e9d",
+    "path": "gnn/data/sinks/94ef085a-a1c2-4167-a642-059344d43e9d.json",
+    "label": "Sink \u2014 Koldenb\u00fcttel"
+  },
+  {
+    "id": "957d7682-9aa9-40a1-bdaf-bbd4dc75898e",
+    "path": "gnn/data/sinks/957d7682-9aa9-40a1-bdaf-bbd4dc75898e.json",
+    "label": "Sink \u2014 Heringsdorf"
+  },
+  {
+    "id": "bcc852ce-23a0-45aa-a115-f60b01eefb2f",
+    "path": "gnn/data/sinks/bcc852ce-23a0-45aa-a115-f60b01eefb2f.json",
+    "label": "Sink \u2014 Fockbek"
+  },
+  {
+    "id": "1970e394-29bc-4068-b58b-3238dbdfce8d",
+    "path": "gnn/data/sinks/1970e394-29bc-4068-b58b-3238dbdfce8d.json",
+    "label": "Sink \u2014 Dammfleth"
+  },
+  {
+    "id": "b7f10915-6e37-471b-acc2-1ff9b6700e50",
+    "path": "gnn/data/sinks/b7f10915-6e37-471b-acc2-1ff9b6700e50.json",
+    "label": "Sink \u2014 Dammfleth"
+  },
+  {
+    "id": "db4e8edb-a5d3-47bf-a176-8e98051a6716",
+    "path": "gnn/data/sinks/db4e8edb-a5d3-47bf-a176-8e98051a6716.json",
+    "label": "Sink \u2014 Nortorf"
+  },
+  {
+    "id": "252d73fe-2ce9-4922-873f-f487785932c3",
+    "path": "gnn/data/sinks/252d73fe-2ce9-4922-873f-f487785932c3.json",
+    "label": "Sink \u2014 Dammfleth"
+  },
+  {
+    "id": "1df7ba27-af71-4d27-9142-3771796c7e8c",
+    "path": "gnn/data/sinks/1df7ba27-af71-4d27-9142-3771796c7e8c.json",
+    "label": "Sink \u2014 Hitzhusen"
+  },
+  {
+    "id": "9474ee65-4322-423b-b2f5-d96dc20b6918",
+    "path": "gnn/data/sinks/9474ee65-4322-423b-b2f5-d96dc20b6918.json",
+    "label": "Sink \u2014 Glasau"
+  },
+  {
+    "id": "ecfc52c8-2af6-440d-88bd-cc2ff0778ef5",
+    "path": "gnn/data/sinks/ecfc52c8-2af6-440d-88bd-cc2ff0778ef5.json",
+    "label": "Sink \u2014 Glasau"
+  },
+  {
+    "id": "c89b3c8b-f2e6-4748-bd98-db9a4f4e146c",
+    "path": "gnn/data/sinks/c89b3c8b-f2e6-4748-bd98-db9a4f4e146c.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "5dd98a56-710b-42d5-9b91-146fccf36b9a",
+    "path": "gnn/data/sinks/5dd98a56-710b-42d5-9b91-146fccf36b9a.json",
+    "label": "Sink \u2014 Ottendorf"
+  },
+  {
+    "id": "f617c5e6-db86-4ea6-bae7-4fc8a25f383e",
+    "path": "gnn/data/sinks/f617c5e6-db86-4ea6-bae7-4fc8a25f383e.json",
+    "label": "Sink \u2014 Hankensb\u00fcttel"
+  },
+  {
+    "id": "9aa463d9-eb5e-4697-b385-57077910c61a",
+    "path": "gnn/data/sinks/9aa463d9-eb5e-4697-b385-57077910c61a.json",
+    "label": "Sink \u2014 Hankensb\u00fcttel"
+  },
+  {
+    "id": "05ad742e-1d02-45f2-9e25-a40e9f01ee1c",
+    "path": "gnn/data/sinks/05ad742e-1d02-45f2-9e25-a40e9f01ee1c.json",
+    "label": "Sink \u2014 Hankensb\u00fcttel"
+  },
+  {
+    "id": "27c70fa8-5875-49ab-9bab-d21f1e6ce822",
+    "path": "gnn/data/sinks/27c70fa8-5875-49ab-9bab-d21f1e6ce822.json",
+    "label": "Sink \u2014 B\u00f6el"
+  },
+  {
+    "id": "46384d00-9a3d-4aa6-a9a8-8c7f7d53709f",
+    "path": "gnn/data/sinks/46384d00-9a3d-4aa6-a9a8-8c7f7d53709f.json",
+    "label": "Sink \u2014 Bobitz"
+  },
+  {
+    "id": "f97d72db-c1b9-413d-8b2e-95c33476d015",
+    "path": "gnn/data/sinks/f97d72db-c1b9-413d-8b2e-95c33476d015.json",
+    "label": "Sink \u2014 f97d72db\u2026"
+  },
+  {
+    "id": "d5a55f4e-735e-497b-a1ac-cbdb6b52c1c6",
+    "path": "gnn/data/sinks/d5a55f4e-735e-497b-a1ac-cbdb6b52c1c6.json",
+    "label": "Sink \u2014 Karlum"
+  },
+  {
+    "id": "acefaf9f-2b38-4009-86c8-48bf89da9696",
+    "path": "gnn/data/sinks/acefaf9f-2b38-4009-86c8-48bf89da9696.json",
+    "label": "Sink \u2014 Uckerland"
+  },
+  {
+    "id": "4a12fe78-37c2-4b7c-9970-7e03e30a0188",
+    "path": "gnn/data/sinks/4a12fe78-37c2-4b7c-9970-7e03e30a0188.json",
+    "label": "Sink \u2014 Beidenfleth"
+  },
+  {
+    "id": "1b84c5a1-572a-4cb7-9f63-6cb0f2066a0e",
+    "path": "gnn/data/sinks/1b84c5a1-572a-4cb7-9f63-6cb0f2066a0e.json",
+    "label": "Sink \u2014 Dammfleth"
+  },
+  {
+    "id": "d9310eba-eb06-4430-907d-916d0acd89ce",
+    "path": "gnn/data/sinks/d9310eba-eb06-4430-907d-916d0acd89ce.json",
+    "label": "Sink \u2014 Dammfleth"
+  },
+  {
+    "id": "50a8f6fd-0b3f-40ab-9a4c-4deb693007a0",
+    "path": "gnn/data/sinks/50a8f6fd-0b3f-40ab-9a4c-4deb693007a0.json",
+    "label": "Sink \u2014 Osterrade"
+  },
+  {
+    "id": "b5be35f9-f026-454c-b674-987453bcff5f",
+    "path": "gnn/data/sinks/b5be35f9-f026-454c-b674-987453bcff5f.json",
+    "label": "Sink \u2014 Gro\u00dfenrade"
+  },
+  {
+    "id": "4a30c2e6-da0e-4c1a-85ec-23d3cf371790",
+    "path": "gnn/data/sinks/4a30c2e6-da0e-4c1a-85ec-23d3cf371790.json",
+    "label": "Sink \u2014 Sankt Michaelisdonn"
+  },
+  {
+    "id": "95f68b50-2946-4457-9d62-edd8d0aa23b7",
+    "path": "gnn/data/sinks/95f68b50-2946-4457-9d62-edd8d0aa23b7.json",
+    "label": "Sink \u2014 Hochdonn"
+  },
+  {
+    "id": "1a9acf66-2acb-434e-ba4c-941932213823",
+    "path": "gnn/data/sinks/1a9acf66-2acb-434e-ba4c-941932213823.json",
+    "label": "Sink \u2014 Wanzleben-B\u00f6rde"
+  },
+  {
+    "id": "3c1d0d88-48c1-4d13-82fe-9e179ed8dfaa",
+    "path": "gnn/data/sinks/3c1d0d88-48c1-4d13-82fe-9e179ed8dfaa.json",
+    "label": "Sink \u2014 Ladelund"
+  },
+  {
+    "id": "f4ed53b8-b4df-454d-8021-4709e4cbdd7b",
+    "path": "gnn/data/sinks/f4ed53b8-b4df-454d-8021-4709e4cbdd7b.json",
+    "label": "Sink \u2014 Bunsoh"
+  },
+  {
+    "id": "22ed7d06-a13e-4d6c-9b75-0b2eb634f0c9",
+    "path": "gnn/data/sinks/22ed7d06-a13e-4d6c-9b75-0b2eb634f0c9.json",
+    "label": "Sink \u2014 Osterrade"
+  }
+]

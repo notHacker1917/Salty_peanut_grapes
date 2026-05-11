@@ -1,0 +1,1678 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Cula",
+    "description": "Public Cula API. No authentication required.\n\nCula tracks biochar-based carbon removal credits. Biochar is produced by heating biomass (e.g. wood chips) in a low-oxygen process called pyrolysis. When biochar is applied into a stable medium (e.g. soil, concrete), the carbon it contains is locked away for centuries, creating a measurable carbon sink.\n\nThis API provides read-only access to:\n- **Sinks** — verified carbon removal events, each with a full event graph\n  tracing the supply chain from biomass creation through delivery, pyrolysis,\n  and final application.\n\n- **Proof documents** — photos, PDFs, and other evidence files attached to\n  events in a sink's lifecycle, downloadable via their cloud storage IDs.\n\n- **Machine data** — time-series sensor readings from pyrolysis machines\n  (temperatures, gas flows, energy consumption, etc.).\n\n\n**Rate limiting:** All endpoints are rate-limited to **60 requests per minute** per IP address. Exceeding this limit returns HTTP 429 (Too Many Requests).\n\nTypical workflow: list sinks → get a sink's details (including its carbonCaptureSiteId) → list machines for that site → list data points for a machine → fetch time-series data. To download proof documents, find FileReference objects within event proofs and use their cloudStorageId with the /documents/{id} endpoint.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://api.hack-hpi.cula.earth"
+    }
+  ],
+  "paths": {
+    "/api/hack-hpi/sinks": {
+      "get": {
+        "summary": "List sink IDs",
+        "description": "Returns the IDs of all carbon sinks.",
+        "operationId": "listSinks",
+        "tags": [
+          "Sinks"
+        ],
+        "responses": {
+          "200": {
+            "description": "A list of sink UUIDs.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "example": [
+                    "5c13033d-fb32-4515-b246-1c9ab6a615eb",
+                    "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+                  ]
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Rate limit exceeded (60 requests per minute per IP)."
+          }
+        }
+      }
+    },
+    "/api/hack-hpi/sinks/{id}": {
+      "get": {
+        "summary": "Get sink details",
+        "description": "Returns the full registry sink object including event graph, sites, organisations, materials, containers, and LCA data.",
+        "operationId": "getSink",
+        "tags": [
+          "Sinks"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "The UUID of the sink.",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "example": "5c13033d-fb32-4515-b246-1c9ab6a615eb"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The full registry sink.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Sink"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Sink not found."
+          },
+          "429": {
+            "description": "Rate limit exceeded (60 requests per minute per IP)."
+          }
+        }
+      }
+    },
+    "/api/hack-hpi/documents/{id}": {
+      "get": {
+        "summary": "Download a document",
+        "description": "Downloads a file by its cloud storage ID. Use the cloudStorageId, blurredCloudStorageId, or thumbnailCloudStorageId from a FileReference object. Returns the raw binary stream.",
+        "operationId": "downloadDocument",
+        "tags": [
+          "Documents"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "A cloud storage ID (cloudStorageId, blurredCloudStorageId, or thumbnailCloudStorageId) from a FileReference.",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "example": "02782e80-23a2-418c-9366-5cb79e362a4d"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The file contents as a binary stream.",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "File not found."
+          },
+          "429": {
+            "description": "Rate limit exceeded (60 requests per minute per IP)."
+          }
+        }
+      }
+    },
+    "/api/hack-hpi/sites/{siteId}/machines": {
+      "get": {
+        "summary": "List machine IDs for a site",
+        "description": "Returns the IDs of all machines belonging to a given site. Use the carbonCaptureSiteId from a Sink — only carbon capture sites (e.g. pyrolysis sites) have machines.",
+        "operationId": "listMachines",
+        "tags": [
+          "Machines"
+        ],
+        "parameters": [
+          {
+            "name": "siteId",
+            "in": "path",
+            "required": true,
+            "description": "The UUID of the site.",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "example": "f132b7a0-6989-4242-9df4-1928e06541a9"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A list of machine UUIDs.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "example": [
+                    "a05c1f12-c135-4fbd-9e99-06bff6773d2e"
+                  ]
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Site not found."
+          },
+          "429": {
+            "description": "Rate limit exceeded (60 requests per minute per IP)."
+          }
+        }
+      }
+    },
+    "/api/hack-hpi/machines/{machineId}/data-points": {
+      "get": {
+        "summary": "List data point config IDs for a machine",
+        "description": "Returns the IDs of all raw machine data point configurations for a given machine.",
+        "operationId": "listMachineDataPoints",
+        "tags": [
+          "Machine Data Points"
+        ],
+        "parameters": [
+          {
+            "name": "machineId",
+            "in": "path",
+            "required": true,
+            "description": "The UUID of the machine.",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "example": "a05c1f12-c135-4fbd-9e99-06bff6773d2e"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A list of data point config UUIDs.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "example": [
+                    "00d41556-5c39-4459-b66d-ba64b64bad3e"
+                  ]
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Machine not found."
+          },
+          "429": {
+            "description": "Rate limit exceeded (60 requests per minute per IP)."
+          }
+        }
+      }
+    },
+    "/api/hack-hpi/machine-data-points/{machineDpConfigId}": {
+      "get": {
+        "summary": "Get data point config details",
+        "description": "Returns metadata for a single machine data point configuration, including its name, unit, and sampling frequency.",
+        "operationId": "getMachineDataPoint",
+        "tags": [
+          "Machine Data Points"
+        ],
+        "parameters": [
+          {
+            "name": "machineDpConfigId",
+            "in": "path",
+            "required": true,
+            "description": "The UUID of the machine data point configuration.",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "example": "00d41556-5c39-4459-b66d-ba64b64bad3e"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The data point configuration.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MachineDpConfig"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Data point config not found."
+          },
+          "429": {
+            "description": "Rate limit exceeded (60 requests per minute per IP)."
+          }
+        }
+      }
+    },
+    "/api/hack-hpi/machine-data": {
+      "post": {
+        "summary": "Get machine data time series",
+        "description": "Fetches time-series data for one or more machine data points within specified time ranges and bucket sizes.",
+        "operationId": "getMachineData",
+        "tags": [
+          "Machine Data"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MachineDpRequest"
+                }
+              },
+              "example": [
+                {
+                  "source": "00d41556-5c39-4459-b66d-ba64b64bad3e",
+                  "start": "2024-01-01T00:00:00.000Z",
+                  "end": "2024-01-31T23:59:59.000Z",
+                  "timeBucket": "1 hour"
+                }
+              ]
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Time-series data for each requested data point.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MachineDataInRange"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid request body (e.g. malformed timeBucket)."
+          },
+          "404": {
+            "description": "One or more data point sources not found."
+          },
+          "429": {
+            "description": "Rate limit exceeded (60 requests per minute per IP)."
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Sink": {
+        "type": "object",
+        "description": "A carbon sink with its full registry context, including the event graph tracing its full lifecycle from biomass creation through pyrolysis to final application.",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Unique identifier of the sink."
+          },
+          "created": {
+            "type": "string",
+            "description": "Milliseconds since Unix epoch (1970-01-01T00:00:00Z) as a string."
+          },
+          "location": {
+            "description": "Geographic location of the sink.",
+            "$ref": "#/components/schemas/Location"
+          },
+          "normalisedGrossImpact": {
+            "type": "number",
+            "description": "Gross carbon impact in kg CO₂e sequestered, before subtracting process emissions."
+          },
+          "normalisedNetImpact": {
+            "type": "number",
+            "description": "Net carbon impact in kg CO₂e sequestered, after subtracting process emissions from the event graph."
+          },
+          "validationState": {
+            "type": "string",
+            "enum": [
+              "complete"
+            ],
+            "description": "Only sinks with validation state \"complete\" are returned."
+          },
+          "technology": {
+            "type": "string",
+            "enum": [
+              "biochar"
+            ],
+            "description": "The carbon removal technology used."
+          },
+          "isPublic": {
+            "type": "boolean",
+            "description": "Whether this sink is publicly visible on the registry."
+          },
+          "sinkSubmissionsIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "description": "IDs of submissions of this sink to external registries."
+          },
+          "ownerOrganisationId": {
+            "type": "string",
+            "format": "uuid",
+            "description": "ID of the organisation that owns the sink."
+          },
+          "carbonCaptureSiteId": {
+            "type": "string",
+            "format": "uuid",
+            "description": "The site that captures the carbon (e.g. pyrolysis site)."
+          },
+          "materialId": {
+            "type": "string",
+            "format": "uuid",
+            "description": "ID of the sunken biochar material. This material is also included in the materials array, which contains all materials involved in the sink's supply chain."
+          },
+          "confirmationDocumentFileReferenceId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true,
+            "description": "File reference ID for the confirmation document. Find the matching FileReference in event proofs and use its cloudStorageId with the /documents/{id} endpoint to download."
+          },
+          "eventGraph": {
+            "description": "Directed graph of all events in this sink's lifecycle.",
+            "$ref": "#/components/schemas/EventGraph"
+          },
+          "sites": {
+            "type": "array",
+            "description": "All sites involved in the sink's supply chain.",
+            "items": {
+              "$ref": "#/components/schemas/Site"
+            }
+          },
+          "organisations": {
+            "type": "array",
+            "description": "All organisations involved in the sink's supply chain.",
+            "items": {
+              "$ref": "#/components/schemas/OrganisationSummary"
+            }
+          },
+          "materials": {
+            "type": "array",
+            "description": "All materials referenced by the sink.",
+            "items": {
+              "$ref": "#/components/schemas/Material"
+            }
+          },
+          "utilizedContainers": {
+            "type": "array",
+            "description": "All material containers utilized in this sink.",
+            "items": {
+              "$ref": "#/components/schemas/MaterialContainer"
+            }
+          },
+          "lcaDatabases": {
+            "type": "array",
+            "description": "LCA databases referenced by emission calculations.",
+            "items": {
+              "$ref": "#/components/schemas/LcaDatabase"
+            }
+          },
+          "lcaActivities": {
+            "type": "array",
+            "description": "LCA activities (emission factors) used in emission calculations.",
+            "items": {
+              "$ref": "#/components/schemas/LcaActivity"
+            }
+          }
+        }
+      },
+      "EventGraph": {
+        "type": "object",
+        "description": "Directed graph of events that make up the sink's lifecycle. The graph traces the full supply chain from biomass creation, through deliveries, pyrolysis, processing, and final application as a carbon sink.\nThe root node is the final event (sink creation / material application). Each node's \"links\" array points backward to its predecessor events. To reconstruct the chronological supply chain, traverse from leaf nodes (biomass creation) toward the root (sink creation). A typical chain looks like: biomass_creation → biomass_delivery → pyrolysis → biochar_delivery_to_sink → sink_creation. Processing and additional delivery steps may appear between stages.",
+        "properties": {
+          "root": {
+            "type": "string",
+            "description": "Event ID of the root node (the sink creation event — the final step in the lifecycle)."
+          },
+          "nodes": {
+            "type": "object",
+            "description": "Map of event ID to event info node.",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/EventInfo"
+            }
+          }
+        }
+      },
+      "EventInfo": {
+        "type": "object",
+        "description": "A graph node combining graph metadata with the full registry event payload.",
+        "properties": {
+          "contributionFactor": {
+            "type": "number",
+            "description": "Share of total impact attributed to this event for the sink (0 to 1)."
+          },
+          "isCompleted": {
+            "type": "boolean",
+            "description": "Whether all required data for this event has been recorded."
+          },
+          "eventType": {
+            "type": "string",
+            "enum": [
+              "step-execution",
+              "delivery-leg"
+            ],
+            "description": "The type of event — either a processing step or a delivery between sites."
+          },
+          "stepExecutionType": {
+            "type": "string",
+            "nullable": true,
+            "enum": [
+              "material_creation",
+              "material_processing",
+              "multi_material_processing",
+              "material_application"
+            ],
+            "description": "Present only when eventType is \"step-execution\"."
+          },
+          "links": {
+            "type": "array",
+            "description": "Back-links to predecessor events in the graph.",
+            "items": {
+              "$ref": "#/components/schemas/AggregatedSinkEventLink"
+            }
+          },
+          "event": {
+            "description": "The full event payload for this graph node.",
+            "$ref": "#/components/schemas/Event"
+          }
+        }
+      },
+      "AggregatedSinkEventLink": {
+        "type": "object",
+        "description": "A link from one event to a predecessor event, representing material flow.",
+        "properties": {
+          "eventRef": {
+            "type": "string",
+            "description": "Event ID of the predecessor event."
+          },
+          "percentage": {
+            "type": "number",
+            "description": "Fraction (0 to 1) of the predecessor that contributed to this event."
+          },
+          "connectingContainerIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "description": "Container IDs linking the two events."
+          },
+          "connectionType": {
+            "type": "string",
+            "enum": [
+              "pool",
+              "direct"
+            ],
+            "description": "\"direct\" means both events used the same physical container; \"pool\" means material was drawn from a shared pool."
+          }
+        },
+        "required": [
+          "eventRef",
+          "percentage",
+          "connectingContainerIds",
+          "connectionType"
+        ]
+      },
+      "Event": {
+        "type": "object",
+        "description": "A registry event in the sink lifecycle. Discriminated by \"type\" and \"eventType\". Delivery events have sender/receiver sites and payload. Step execution events have a location and input/output containers.",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "biomass_creation",
+              "biomass_processing",
+              "biomass_delivery",
+              "pyrolysis",
+              "biochar_delivery_to_processing",
+              "biochar_processing",
+              "biochar_delivery_to_sink",
+              "sink_creation"
+            ],
+            "description": "The category of this event in the carbon sink lifecycle. Typical chronological order: biomass_creation → biomass_processing → biomass_delivery → pyrolysis → biochar_delivery_to_processing → biochar_processing → biochar_delivery_to_sink → sink_creation. Not all steps are present in every sink."
+          },
+          "eventRef": {
+            "type": "string",
+            "description": "ID of the corresponding event."
+          },
+          "eventType": {
+            "type": "string",
+            "enum": [
+              "step-execution",
+              "delivery-leg"
+            ],
+            "description": "Whether this is a processing step or a delivery between sites."
+          },
+          "lcaActivities": {
+            "type": "array",
+            "description": "LCA activities referenced by this event's emission calculations.",
+            "items": {
+              "$ref": "#/components/schemas/LcaActivity"
+            }
+          },
+          "emissions": {
+            "description": "Tree-structured emission calculation for this event.",
+            "$ref": "#/components/schemas/EmissionCalculation"
+          },
+          "proofs": {
+            "type": "array",
+            "description": "Evidence (photos, documents, tracking events) attached to this event.",
+            "items": {
+              "$ref": "#/components/schemas/EventProof"
+            }
+          },
+          "created": {
+            "type": "string",
+            "description": "Milliseconds since Unix epoch (1970-01-01T00:00:00Z) as a string."
+          },
+          "wayPoints": {
+            "type": "array",
+            "description": "Array of [longitude, latitude] coordinate pairs (route for deliveries).",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "senderSiteId": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Present on delivery events. Site that sent the material."
+          },
+          "receiverSiteId": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Present on delivery events. Site that received the material."
+          },
+          "payload": {
+            "type": "array",
+            "description": "Present on delivery events. The containers being transported.",
+            "items": {
+              "$ref": "#/components/schemas/MaterialContainer"
+            }
+          },
+          "transportationDistanceInKm": {
+            "type": "number",
+            "description": "Present on delivery events. Distance in kilometers."
+          },
+          "location": {
+            "description": "Present on step execution events. The location where the step was performed (falls back to the site's location).",
+            "$ref": "#/components/schemas/Location"
+          },
+          "siteId": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Present on step execution events. The site where the step was executed."
+          },
+          "input": {
+            "type": "array",
+            "description": "Present on pyrolysis, biomass_processing, biochar_processing, and sink_creation events. The input material containers.",
+            "items": {
+              "$ref": "#/components/schemas/MaterialContainer"
+            }
+          },
+          "output": {
+            "type": "array",
+            "description": "Present on biomass_creation, biomass_processing, biochar_processing, and pyrolysis events. The output material containers.",
+            "items": {
+              "$ref": "#/components/schemas/MaterialContainer"
+            }
+          },
+          "matrixType": {
+            "$ref": "#/components/schemas/SinkMatrix"
+          }
+        },
+        "required": [
+          "type",
+          "eventRef",
+          "eventType",
+          "emissions",
+          "proofs",
+          "created",
+          "wayPoints"
+        ],
+        "discriminator": {
+          "propertyName": "type"
+        }
+      },
+      "EmissionCalculation": {
+        "type": "object",
+        "description": "A tree-structured emission calculation. The root is always a COMPOSITE node that aggregates child nodes (which can be STATIC values, VARIABLE values, or nested COMPOSITE nodes). The \"value\" field holds the computed result in kg CO₂e.",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier of this calculation node."
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "COMPOSITE"
+            ],
+            "description": "Always \"COMPOSITE\" for the root calculation node."
+          },
+          "value": {
+            "type": "number",
+            "description": "Calculated emission value in kg CO₂e."
+          },
+          "config": {
+            "description": "Configuration describing how this node's value is computed.",
+            "$ref": "#/components/schemas/EmissionCalculationConfig"
+          },
+          "nodes": {
+            "type": "array",
+            "description": "Child calculation nodes.",
+            "items": {
+              "$ref": "#/components/schemas/EmissionCalculationNode"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "value",
+          "config",
+          "nodes"
+        ]
+      },
+      "EmissionCalculationNode": {
+        "type": "object",
+        "description": "A node in the emission calculation tree. Can be COMPOSITE (with nested nodes), STATIC (fixed value, optionally referencing an LCA activity), or VARIABLE (derived from a data point or event property).",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier of this calculation node."
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "COMPOSITE",
+              "STATIC",
+              "VARIABLE"
+            ],
+            "description": "The node type determining how its value is derived."
+          },
+          "value": {
+            "type": "number",
+            "description": "Calculated emission value for this node."
+          },
+          "config": {
+            "type": "object",
+            "description": "Configuration for this node, varies by type.",
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "Unique identifier of this config."
+              },
+              "name": {
+                "type": "string",
+                "description": "Human-readable name of this calculation step."
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "COMPOSITE",
+                  "STATIC",
+                  "VARIABLE"
+                ],
+                "description": "Config type matching the node type."
+              },
+              "unit": {
+                "type": "string",
+                "nullable": true,
+                "description": "Metric unit for this node's value (e.g. \"kg CO₂e\", \"km\")."
+              },
+              "explanation": {
+                "type": "string",
+                "nullable": true,
+                "description": "Human-readable explanation of this emission factor."
+              },
+              "expression": {
+                "type": "string",
+                "description": "Present on COMPOSITE nodes. A math expression where child node config IDs are used as variable names (e.g. \"(configId1) * (configId2)\")."
+              },
+              "nodeConfigs": {
+                "type": "array",
+                "description": "Present on COMPOSITE nodes. Configs for child nodes.",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "value": {
+                "type": "number",
+                "description": "Present on STATIC nodes. The fixed emission factor value."
+              },
+              "lcaActivityId": {
+                "type": "string",
+                "format": "uuid",
+                "description": "Present on STATIC nodes. References an LCA activity providing the emission factor."
+              },
+              "fileReference": {
+                "description": "Present on STATIC nodes. A file providing evidence for the emission factor.",
+                "$ref": "#/components/schemas/FileReference"
+              },
+              "linkReference": {
+                "type": "object",
+                "description": "Present on STATIC nodes. An external link reference for the emission factor source.",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "Display name of the link."
+                  },
+                  "link": {
+                    "type": "string",
+                    "description": "URL of the external reference."
+                  }
+                }
+              },
+              "sourceConfig": {
+                "type": "object",
+                "description": "Present on VARIABLE nodes. Defines where the variable value comes from.",
+                "properties": {
+                  "valueSourceType": {
+                    "type": "string",
+                    "enum": [
+                      "data_point",
+                      "event_key",
+                      "manual"
+                    ],
+                    "description": "\"data_point\" means the value comes from a machine data point; \"event_key\" means it comes from an event property; \"manual\" is used when the value was entered manually (may be omitted from older spec revisions)."
+                  },
+                  "dpConfigId": {
+                    "type": "string",
+                    "format": "uuid",
+                    "description": "Present when valueSourceType is \"data_point\"."
+                  },
+                  "eventKey": {
+                    "type": "string",
+                    "enum": [
+                      "combinedMaterialWeightInKg",
+                      "transportationDistanceInKm"
+                    ],
+                    "description": "Present when valueSourceType is \"event_key\"."
+                  }
+                }
+              }
+            }
+          },
+          "nodes": {
+            "type": "array",
+            "description": "Present on COMPOSITE nodes. Child calculation nodes.",
+            "items": {
+              "$ref": "#/components/schemas/EmissionCalculationNode"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "value",
+          "config"
+        ]
+      },
+      "EmissionCalculationConfig": {
+        "type": "object",
+        "description": "Configuration for a COMPOSITE emission calculation node.",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier of this config."
+          },
+          "name": {
+            "type": "string",
+            "description": "Human-readable name of this calculation step."
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "COMPOSITE"
+            ],
+            "description": "Always \"COMPOSITE\" for this config type."
+          },
+          "unit": {
+            "type": "string",
+            "nullable": true,
+            "description": "Metric unit for this node's value."
+          },
+          "explanation": {
+            "type": "string",
+            "nullable": true,
+            "description": "Human-readable explanation of this calculation step."
+          },
+          "expression": {
+            "type": "string",
+            "description": "A math expression where child node config IDs are used as variable names (e.g. \"(configId1) * (configId2)\")."
+          },
+          "nodeConfigs": {
+            "type": "array",
+            "description": "Configurations for child nodes in this composite calculation.",
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "type",
+          "expression"
+        ]
+      },
+      "EventProof": {
+        "type": "object",
+        "description": "Evidence attached to an event. Discriminated by \"type\": \"file\" proofs link to uploaded documents (photos, PDFs); \"tracking_event\" proofs are automated location/IP detections.",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier of this proof."
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "When this proof was recorded (ISO 8601)."
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "file",
+              "tracking_event"
+            ],
+            "description": "Discriminator for the proof type."
+          },
+          "proofConfigs": {
+            "type": "array",
+            "description": "Configurations describing what aspects of the event this proof covers.",
+            "items": {
+              "$ref": "#/components/schemas/ProofConfig"
+            }
+          },
+          "isSensitive": {
+            "type": "boolean",
+            "description": "Present on file proofs. If true, fileReference is redacted (no fileName or cloudStorageId)."
+          },
+          "fileReference": {
+            "description": "Present on file proofs. The referenced file (photo, PDF, etc.).",
+            "$ref": "#/components/schemas/FileReference"
+          },
+          "thumbnailFileReference": {
+            "description": "Present on file proofs. A thumbnail version of the file.",
+            "$ref": "#/components/schemas/FileReference"
+          },
+          "eventType": {
+            "type": "string",
+            "enum": [
+              "location_detection",
+              "ip_address_location"
+            ],
+            "description": "Present on tracking_event proofs."
+          },
+          "metaData": {
+            "type": "object",
+            "description": "Present on tracking_event proofs. Additional metadata.",
+            "properties": {
+              "distance": {
+                "type": "number",
+                "description": "Distance in meters."
+              }
+            }
+          }
+        },
+        "required": [
+          "id",
+          "timestamp",
+          "type",
+          "proofConfigs"
+        ]
+      },
+      "ProofConfig": {
+        "type": "object",
+        "description": "Configuration describing what aspect of an event this proof covers.",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Unique identifier of this proof config."
+          },
+          "objectType": {
+            "type": "string",
+            "enum": [
+              "delivery",
+              "material_creation",
+              "material_processing",
+              "material_application",
+              "multi_material_processing",
+              "periodic_emissions_log_request"
+            ],
+            "description": "The type of provable object this proof is attached to."
+          },
+          "key": {
+            "type": "string",
+            "description": "The specific field or aspect of the object that this proof covers."
+          }
+        },
+        "required": [
+          "id",
+          "objectType",
+          "key"
+        ]
+      },
+      "FileReference": {
+        "type": "object",
+        "description": "Reference to an uploaded file in cloud storage. For sensitive file proofs, fileName and cloudStorageId are omitted.",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Unique identifier of the file reference."
+          },
+          "fileName": {
+            "type": "string",
+            "description": "Name of the file. Omitted for sensitive file proofs."
+          },
+          "type": {
+            "type": "string",
+            "description": "MIME type of the file (e.g. \"image/jpeg\", \"application/pdf\")."
+          },
+          "size": {
+            "type": "number",
+            "description": "File size in bytes."
+          },
+          "cloudStorageId": {
+            "type": "string",
+            "nullable": true,
+            "description": "ID of the file in cloud storage. Use with the /documents/{id} endpoint to download. Omitted for sensitive file proofs."
+          },
+          "blurredCloudStorageId": {
+            "type": "string",
+            "nullable": true,
+            "description": "ID of a blurred version of the file in cloud storage. Use with the /documents/{id} endpoint to download."
+          },
+          "thumbnailCloudStorageId": {
+            "type": "string",
+            "nullable": true,
+            "description": "ID of a thumbnail version of the file in cloud storage. Use with the /documents/{id} endpoint to download."
+          },
+          "registeredSiteId": {
+            "type": "string",
+            "format": "uuid",
+            "description": "ID of the owning registered site."
+          },
+          "fileSourceId": {
+            "type": "string",
+            "format": "uuid",
+            "description": "ID of the file source associated with this file reference."
+          }
+        }
+      },
+      "Site": {
+        "type": "object",
+        "description": "A site involved in the sink's supply chain.",
+        "properties": {
+          "siteRef": {
+            "type": "string",
+            "format": "uuid",
+            "description": "The site's ID."
+          },
+          "name": {
+            "type": "string",
+            "description": "Display name of the site."
+          },
+          "location": {
+            "$ref": "#/components/schemas/Location"
+          },
+          "organisationRef": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true,
+            "description": "The owning organisation's ID (if the site is registered)."
+          }
+        },
+        "required": [
+          "siteRef",
+          "name",
+          "location"
+        ]
+      },
+      "OrganisationSummary": {
+        "type": "object",
+        "description": "Summary of an organisation involved in the sink.",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Unique identifier of the organisation."
+          },
+          "name": {
+            "type": "string",
+            "description": "Display name of the organisation."
+          },
+          "description": {
+            "type": "string",
+            "nullable": true,
+            "description": "Short description of the organisation."
+          },
+          "logoSVG": {
+            "type": "string",
+            "nullable": true,
+            "description": "SVG markup of the organisation's logo."
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ]
+      },
+      "Material": {
+        "type": "object",
+        "description": "A material tracked in the carbon sink lifecycle (e.g. biochar, biomass).",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Unique identifier of the material."
+          },
+          "name": {
+            "type": "string",
+            "description": "Display name of the material."
+          },
+          "sitesIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "description": "IDs of sites associated with this material."
+          },
+          "description": {
+            "type": "string",
+            "description": "Textual description of the material."
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "biochar",
+              "biomass",
+              "bio_oil",
+              "water",
+              "other"
+            ],
+            "description": "Category of the material."
+          },
+          "colors": {
+            "type": "object",
+            "description": "Display colors for visualizing this material.",
+            "properties": {
+              "darkColor": {
+                "type": "string",
+                "description": "Hex color for dark backgrounds."
+              },
+              "lightColor": {
+                "type": "string",
+                "description": "Hex color for light backgrounds."
+              }
+            }
+          },
+          "impact": {
+            "type": "object",
+            "nullable": true,
+            "description": "Carbon impact information for the material.",
+            "properties": {
+              "normalized": {
+                "type": "number",
+                "description": "Normalized carbon content (e.g. 0.85 = 85% stable carbon)."
+              },
+              "description": {
+                "type": "string",
+                "description": "Human-readable description of the impact calculation."
+              }
+            }
+          },
+          "certificationId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true,
+            "description": "ID of the material's certification (e.g. EBC certificate)."
+          },
+          "metaData": {
+            "type": "object",
+            "nullable": true,
+            "description": "Certification-specific metadata (EBC or WBC biochar).",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "ebc_biochar",
+                  "wbc_biochar"
+                ],
+                "description": "The certification standard type."
+              },
+              "batchId": {
+                "type": "string",
+                "description": "Batch identifier from the certification body."
+              },
+              "batchLink": {
+                "type": "string",
+                "description": "URL linking to the batch on the certification body's website."
+              },
+              "applicationClass": {
+                "type": "string",
+                "enum": [
+                  "feed_plus",
+                  "feed",
+                  "agro",
+                  "agro_organic",
+                  "urban",
+                  "consumer_material",
+                  "basic_material",
+                  "wbc_premium",
+                  "wbc_agro",
+                  "wbc_consumer_material"
+                ],
+                "description": "Biochar quality/application class per the certification standard."
+              },
+              "hToCRatio": {
+                "type": "number",
+                "description": "Hydrogen-to-carbon molar ratio of the biochar."
+              },
+              "phValue": {
+                "type": "number",
+                "description": "pH value of the biochar."
+              },
+              "fossilFuelEmissions": {
+                "type": "number",
+                "nullable": true,
+                "description": "Per ton of dry biochar."
+              },
+              "methaneEmissions": {
+                "type": "number",
+                "nullable": true,
+                "description": "Per ton of dry biochar."
+              }
+            }
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "description",
+          "type",
+          "colors"
+        ]
+      },
+      "MaterialContainer": {
+        "type": "object",
+        "description": "A material container with its content fully resolved with material details.",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Unique identifier of the container."
+          },
+          "created": {
+            "type": "string",
+            "description": "Milliseconds since Unix epoch (1970-01-01T00:00:00Z) as a string."
+          },
+          "content": {
+            "type": "array",
+            "description": "The material amounts inside this container.",
+            "items": {
+              "$ref": "#/components/schemas/MaterialAmount"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "created",
+          "content"
+        ]
+      },
+      "MaterialAmount": {
+        "type": "object",
+        "description": "A specific amount of a material inside a container.",
+        "properties": {
+          "weightInKg": {
+            "type": "number",
+            "description": "Weight of this material amount in kilograms."
+          },
+          "material": {
+            "type": "object",
+            "description": "The material (same shape as Material but without sitesIds and certificationId).",
+            "properties": {
+              "id": {
+                "type": "string",
+                "format": "uuid",
+                "description": "Unique identifier of the material."
+              },
+              "name": {
+                "type": "string",
+                "description": "Display name of the material."
+              },
+              "description": {
+                "type": "string",
+                "description": "Textual description of the material."
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "biochar",
+                  "biomass",
+                  "bio_oil",
+                  "water",
+                  "other"
+                ],
+                "description": "Category of the material."
+              },
+              "colors": {
+                "type": "object",
+                "description": "Display colors for visualizing this material.",
+                "properties": {
+                  "darkColor": {
+                    "type": "string",
+                    "description": "Hex color for dark backgrounds."
+                  },
+                  "lightColor": {
+                    "type": "string",
+                    "description": "Hex color for light backgrounds."
+                  }
+                }
+              },
+              "impact": {
+                "type": "object",
+                "nullable": true,
+                "description": "Carbon impact information for the material.",
+                "properties": {
+                  "normalized": {
+                    "type": "number",
+                    "description": "Normalized carbon content (e.g. 0.85 = 85% stable carbon)."
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "Human-readable description of the impact calculation."
+                  }
+                }
+              },
+              "metaData": {
+                "type": "object",
+                "nullable": true,
+                "description": "Certification-specific metadata (EBC or WBC biochar). Same shape as Material.metaData."
+              }
+            }
+          }
+        },
+        "required": [
+          "weightInKg",
+          "material"
+        ]
+      },
+      "SinkMatrix": {
+        "type": "object",
+        "description": "The sink matrix defines the application medium for the biochar (e.g. soil, concrete, compost) and its long-term carbon retention properties. Present only on sink_creation events.",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Unique identifier of the sink matrix."
+          },
+          "name": {
+            "type": "string",
+            "description": "Display name of the matrix type (e.g. \"Agricultural Soil\", \"Concrete\")."
+          },
+          "description": {
+            "type": "string",
+            "description": "Detailed description of this matrix type."
+          },
+          "normalizedRemainingCarbon": {
+            "type": "number",
+            "description": "Fraction of carbon remaining after the retention period (0 to 1)."
+          },
+          "remainingCarbonPeriodInYears": {
+            "type": "number",
+            "description": "Time period in years over which carbon retention is measured."
+          },
+          "origin": {
+            "type": "string",
+            "enum": [
+              "biological_matrix",
+              "mineral_matrix",
+              "materials",
+              "soil",
+              "landfill",
+              "waste_water",
+              "geological_storage"
+            ],
+            "description": "High-level category of the application medium."
+          },
+          "diffuseSinkAuthorized": {
+            "type": "boolean",
+            "description": "Whether diffuse (non-localized) sink application is permitted for this matrix."
+          },
+          "conditions": {
+            "type": "string",
+            "description": "Textual description of conditions for this matrix type."
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "description",
+          "normalizedRemainingCarbon",
+          "remainingCarbonPeriodInYears",
+          "origin",
+          "diffuseSinkAuthorized",
+          "conditions"
+        ]
+      },
+      "Location": {
+        "type": "object",
+        "description": "Geographic location with coordinates and optional address.",
+        "properties": {
+          "lat": {
+            "type": "number",
+            "description": "Latitude."
+          },
+          "long": {
+            "type": "number",
+            "description": "Longitude."
+          },
+          "street": {
+            "type": "string",
+            "nullable": true,
+            "description": "Street name and number."
+          },
+          "city": {
+            "type": "string",
+            "nullable": true,
+            "description": "City or municipality name."
+          },
+          "postcode": {
+            "type": "string",
+            "nullable": true,
+            "description": "Postal / ZIP code."
+          },
+          "country": {
+            "type": "string",
+            "nullable": true,
+            "description": "Country name."
+          },
+          "countryCode": {
+            "type": "string",
+            "nullable": true,
+            "description": "ISO 3166-1 alpha-2 country code (e.g. \"DE\", \"US\")."
+          }
+        },
+        "required": [
+          "lat",
+          "long"
+        ]
+      },
+      "LcaDatabase": {
+        "type": "object",
+        "description": "A Life Cycle Assessment database used as a source for emission factors.",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Unique identifier of the LCA database."
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "eco_invent",
+              "epa",
+              "ghgenius",
+              "environment_canada"
+            ],
+            "description": "The LCA database provider."
+          },
+          "version": {
+            "type": "string",
+            "description": "Version of the LCA database (e.g. \"3.9.1\")."
+          },
+          "systemModel": {
+            "type": "string",
+            "enum": [
+              "cutoff"
+            ],
+            "description": "The system model used for the LCA calculations."
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "version",
+          "systemModel"
+        ]
+      },
+      "LcaActivity": {
+        "type": "object",
+        "description": "A Life Cycle Assessment activity representing an emission factor from an LCA database, bound to a specific product and location.",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Unique identifier of the LCA activity."
+          },
+          "lcaDatabaseId": {
+            "type": "string",
+            "format": "uuid",
+            "description": "ID of the LCA database this activity belongs to."
+          },
+          "lcaMethod": {
+            "type": "string",
+            "enum": [
+              "ipcc_2021_incl_biogenic_co2"
+            ],
+            "description": "The assessment methodology used."
+          },
+          "title": {
+            "type": "string",
+            "description": "Title of the LCA activity."
+          },
+          "description": {
+            "type": "string",
+            "description": "Detailed description of the LCA activity."
+          },
+          "product": {
+            "type": "string",
+            "description": "The product this activity applies to."
+          },
+          "location": {
+            "type": "string",
+            "description": "Geographic scope of the activity (e.g. \"GLO\", \"DE\", \"EU\")."
+          },
+          "unit": {
+            "type": "string",
+            "description": "Unit for the emission factor (interpreted as kgCO₂e per unit)."
+          },
+          "kgCO2eTotal": {
+            "type": "number",
+            "description": "Total emission factor in kg CO₂e per unit."
+          },
+          "kgCO2eCo2Fossil": {
+            "type": "number",
+            "nullable": true,
+            "description": "Fossil CO₂ component."
+          },
+          "kgCO2eCh4": {
+            "type": "number",
+            "nullable": true,
+            "description": "Methane component."
+          },
+          "kgCO2eN2oFossil": {
+            "type": "number",
+            "nullable": true,
+            "description": "Fossil N₂O component."
+          },
+          "kgCO2eOghg": {
+            "type": "number",
+            "nullable": true,
+            "description": "Other greenhouse gas component."
+          },
+          "externalId": {
+            "type": "string",
+            "nullable": true,
+            "description": "Identifier in the external LCA database."
+          },
+          "externalLink": {
+            "type": "string",
+            "nullable": true,
+            "description": "URL to the activity in the external LCA database."
+          }
+        },
+        "required": [
+          "id",
+          "lcaDatabaseId",
+          "lcaMethod",
+          "title",
+          "description",
+          "product",
+          "location",
+          "unit",
+          "kgCO2eTotal"
+        ]
+      },
+      "MachineDpConfig": {
+        "type": "object",
+        "description": "Metadata for a single machine data point configuration.",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Unique identifier of the data point configuration."
+          },
+          "name": {
+            "type": "string",
+            "description": "Human-readable name of the data point."
+          },
+          "unit": {
+            "type": "string",
+            "nullable": true,
+            "description": "Metric unit (e.g. \"°C\", \"kg\", \"kWh\")."
+          },
+          "siteId": {
+            "type": "string",
+            "format": "uuid",
+            "description": "ID of the site this data point belongs to."
+          },
+          "machineId": {
+            "type": "string",
+            "format": "uuid",
+            "description": "ID of the machine this data point belongs to."
+          },
+          "frequency": {
+            "type": "string",
+            "nullable": true,
+            "description": "Cron expression defining the sampling frequency."
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "siteId",
+          "machineId"
+        ]
+      },
+      "MachineDpRequest": {
+        "type": "object",
+        "description": "Request parameters for fetching time-series data for a single data point.",
+        "properties": {
+          "source": {
+            "type": "string",
+            "description": "The UUID of the machine data point config.",
+            "format": "uuid"
+          },
+          "start": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Start of the time range (ISO 8601)."
+          },
+          "end": {
+            "type": "string",
+            "format": "date-time",
+            "description": "End of the time range (ISO 8601)."
+          },
+          "timeBucket": {
+            "type": "string",
+            "pattern": "^\\d+(\\s+(second|minute|hour|day|week|month|year)s?|\\s*[smhdw])$",
+            "description": "Aggregation bucket size. Accepts long-form PostgreSQL intervals (e.g. \"5 minutes\", \"1 hour\", \"1 day\", \"1 week\") or short-form abbreviations (e.g. \"1h\", \"30m\", \"1d\", \"1w\", \"10s\")."
+          }
+        },
+        "required": [
+          "source",
+          "start",
+          "end",
+          "timeBucket"
+        ]
+      },
+      "MachineDataInRange": {
+        "type": "object",
+        "description": "Time-series data for a single machine data point within the requested range.",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "The data point config ID."
+          },
+          "config": {
+            "description": "The data point configuration metadata.",
+            "$ref": "#/components/schemas/MachineDpConfig"
+          },
+          "data": {
+            "type": "array",
+            "description": "The time-series values.",
+            "items": {
+              "$ref": "#/components/schemas/TimeSeriesEntry"
+            }
+          }
+        }
+      },
+      "TimeSeriesEntry": {
+        "type": "object",
+        "description": "A single data point in a time series. The value is the average of all raw readings within the time bucket.",
+        "properties": {
+          "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Start of the time bucket (ISO 8601)."
+          },
+          "value": {
+            "type": "number",
+            "description": "Average of all raw readings within this time bucket."
+          }
+        },
+        "required": [
+          "timestamp",
+          "value"
+        ]
+      }
+    }
+  }
+}
