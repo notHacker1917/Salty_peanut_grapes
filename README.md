@@ -8,7 +8,7 @@ The live API is hosted at `https://api.hack-hpi.cula.earth` (paths still use the
  
 - Python 3.10+
 
-## Install
+## Install 
   
 ```bash
 python3 -m venv .venv
