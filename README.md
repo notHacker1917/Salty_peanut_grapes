@@ -5,7 +5,7 @@ Team repository for [HackHPI 2026](https://hackhpi.org/). It includes a small Py
 The live API is hosted at `https://api.hack-hpi.cula.earth` (paths still use the `/api/hack-hpi/...` prefix). All endpoints are read-only and unauthenticated. Rate limit: **60 requests per minute** per IP (HTTP 429 when exceeded).
 
 ## Requirements 
- 
+  
 - Python 3.10+
 
 ## Install 
