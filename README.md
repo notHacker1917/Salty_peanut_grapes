@@ -3,7 +3,7 @@
 Team repository for [HackHPI 2026](https://hackhpi.org/). It includes a small Python library that talks to the **Cula** public API using **httpx** and **Pydantic v2** models generated from the OpenAPI document in this repo.
 
 The live API is hosted at `https://api.hack-hpi.cula.earth` (paths still use the `/api/hack-hpi/...` prefix). All endpoints are read-only and unauthenticated. Rate limit: **60 requests per minute** per IP (HTTP 429 when exceeded).
-
+ 
 ## Requirements 
   
 - Python 3.10+
